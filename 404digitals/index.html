@@ -3,92 +3,755 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 Digitals | Agencia de Marketing Digital en Oviedo</title>
-  <meta name="description" content="Agencia de marketing digital en Oviedo especializada en diseño web, SEO local y automatizaciones con IA. Ayudamos a empresas en Asturias a crecer en Google. Primera consulta gratuita."/>
-  <meta name="keywords" content="agencia marketing digital Oviedo, SEO Oviedo, diseño web Oviedo, posicionamiento Google Asturias, marketing digital Asturias, agencia SEO Oviedo"/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.404digitals.es/"/>
+  <title>404 Digitals – Soluciones Digitales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.404digitals.es/"/>
-  <meta property="og:title" content="404 Digitals | Agencia de Marketing Digital en Oviedo"/>
-  <meta property="og:description" content="Webs que convierten, SEO que posiciona y automatizaciones con IA. Agencia de marketing digital en Oviedo y toda Asturias."/>
-  <meta property="og:locale" content="es_ES"/>
+    :root {
+      --bg:      #060806;
+      --surface: #0B0E0A;
+      --panel:   #0F1210;
+      --card:    #0D100C;
+      --border:  rgba(168,255,62,0.07);
+      --border2: rgba(168,255,62,0.22);
+      --accent:  #A8FF3E;
+      --accent2: #C8FF7A;
+      --glow:    rgba(168,255,62,0.12);
+      --white:   #ECEEE8;
+      --muted:   #566052;
+      --head:    'Unbounded', sans-serif;
+      --body:    'Plus Jakarta Sans', sans-serif;
+    }
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="404 Digitals | Agencia de Marketing Digital en Oviedo"/>
-  <meta name="twitter:description" content="Webs que convierten, SEO que posiciona y automatizaciones con IA. Agencia de marketing digital en Oviedo y toda Asturias."/>
+    html { scroll-behavior: smooth; }
 
-  <!-- Schema.org LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "404 Digitals",
-    "description": "Agencia de marketing digital en Oviedo especializada en diseño web, SEO local y automatizaciones con inteligencia artificial.",
-    "url": "https://www.404digitals.es",
-    "telephone": "+34654101780",
-    "email": "404.digitals@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Oviedo",
-      "addressRegion": "Asturias",
-      "addressCountry": "ES"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Oviedo"},
-      {"@type": "City", "name": "Gijón"},
-      {"@type": "AdministrativeArea", "name": "Asturias"},
-      {"@type": "Country", "name": "España"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Marketing Digital",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diseño Web en Oviedo"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Local en Oviedo"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatizaciones con IA"}}
-      ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "10"
-    },
-    "sameAs": [
-      "https://wa.me/34654101780"
-    ]
-  }
-  </script>
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050508'/%3E%3Ctext x='32' y='36' dominant-baseline='middle' text-anchor='middle' font-family='Syne%2C Arial Black%2C sans-serif' font-weight='800' font-size='21' fill='%2363b3ed' letter-spacing='-1'%3E404%3C/text%3E%3C/svg%3E"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <!-- FAQ Schema para Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"\u00bfCu\u00e1nto tarda en estar lista mi web?","acceptedAnswer":{"@type":"Answer","text":"Una landing page b\u00e1sica entre 5 y 7 d\u00edas. Una web completa entre 2 y 3 semanas."}},
-      {"@type":"Question","name":"\u00bfCu\u00e1ndo empiezo a ver resultados de SEO en Oviedo?","acceptedAnswer":{"@type":"Answer","text":"El SEO local en Oviedo suele mostrar resultados visibles entre 2 y 4 meses."}},
-      {"@type":"Question","name":"\u00bfTrab\u00e1is solo en Oviedo o en toda Espa\u00f1a?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con clientes de toda Espa\u00f1a, con especial presencia en Oviedo, Gij\u00f3n y Asturias."}},
-      {"@type":"Question","name":"\u00bfQu\u00e9 incluye el mantenimiento mensual de la web?","acceptedAnswer":{"@type":"Answer","text":"Actualizaciones de seguridad, copias de seguridad semanales, monitorizaci\u00f3n, soporte t\u00e9cnico y peque\u00f1os cambios de contenido."}}
-    ]
-  }
-  </script>
+    /* GRAIN */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.032; pointer-events: none; z-index: 9990;
+    }
+
+    /* CURSOR */
+    #cursor {
+      width: 8px; height: 8px;
+      background: var(--accent); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9999;
+      transition: transform 0.12s ease;
+      mix-blend-mode: screen;
+    }
+    #cursor-ring {
+      width: 30px; height: 30px;
+      border: 1px solid rgba(168,255,62,0.35); border-radius: 50%;
+      position: fixed; pointer-events: none; z-index: 9998;
+      transition: all 0.07s linear;
+    }
+    body:has(a:hover) #cursor,
+    body:has(button:hover) #cursor { transform: scale(3.5); }
+
+    /* HEADER */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 62px;
+      background: rgba(6,8,6,0.75);
+      backdrop-filter: blur(28px) saturate(1.5);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+    header.scrolled { background: rgba(6,8,6,0.97); }
+
+    .logo {
+      font-family: var(--head); font-weight: 900; font-size: 1.05rem;
+      letter-spacing: -0.02em; color: var(--white); text-decoration: none;
+    }
+    .logo em { color: var(--accent); font-style: normal; }
+
+    nav { display: flex; gap: 2rem; }
+    nav a {
+      font-size: 0.76rem; font-weight: 600; color: var(--muted);
+      text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+
+    .nav-cta {
+      font-family: var(--head); font-weight: 700; font-size: 0.68rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      background: var(--accent); color: var(--bg);
+      padding: 0.55rem 1.3rem; text-decoration: none;
+      transition: all 0.2s; border-radius: 2px;
+    }
+    .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 110px 6vw 8vw;
+      position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; width: 900px; height: 900px;
+      background: radial-gradient(circle at center,
+        rgba(168,255,62,0.075) 0%,
+        rgba(168,255,62,0.025) 35%,
+        transparent 65%);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -52%);
+      animation: orbFloat 9s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes orbFloat {
+      0%,100% { transform: translate(-50%,-52%) scale(1); }
+      50%      { transform: translate(-50%,-48%) scale(1.07); }
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--accent); background: rgba(168,255,62,0.06); border: 1px solid var(--border2);
+      padding: 0.42rem 1.1rem; border-radius: 100px; margin-bottom: 2.5rem;
+      animation: fadeDown 0.8s ease both;
+    }
+    .hero-tag-dot {
+      width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+      animation: blink 2s ease infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.15} }
+
+    .hero-h1 {
+      font-family: var(--head); font-weight: 900;
+      font-size: clamp(3rem, 7.5vw, 8rem);
+      line-height: 0.92; letter-spacing: -0.035em;
+      margin-bottom: 1.8rem;
+      animation: fadeUp 0.9s 0.15s ease both;
+    }
+    .hero-h1 .accent-line { color: var(--accent); display: block; }
+    .hero-h1 .white-line { display: block; }
+
+    .hero-sub {
+      font-size: clamp(0.95rem, 1.6vw, 1.12rem);
+      color: var(--muted); max-width: 500px; margin: 0 auto 3rem;
+      line-height: 1.9; font-weight: 400;
+      animation: fadeUp 0.9s 0.28s ease both;
+    }
+
+    .hero-actions {
+      display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap;
+      animation: fadeUp 0.9s 0.38s ease both;
+    }
+
+    .btn-primary {
+      background: var(--accent); color: var(--bg);
+      font-family: var(--head); font-weight: 700; font-size: 0.72rem;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 1rem 2rem; border: none; cursor: pointer;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.2s; border-radius: 2px;
+    }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(168,255,62,0.22); }
+
+    .btn-ghost {
+      background: transparent; color: var(--white);
+      font-family: var(--head); font-weight: 600; font-size: 0.72rem;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 1rem 2rem; border: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.2s; border-radius: 2px;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    .scroll-hint {
+      position: absolute; bottom: 2.5rem; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      opacity: 0.35; animation: fadeUp 1s 0.6s ease both;
+    }
+    .scroll-label { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); }
+    .scroll-line {
+      width: 1px; height: 44px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+      animation: scrollAnim 2.5s ease infinite;
+    }
+    @keyframes scrollAnim { 0%{opacity:0;transform:scaleY(0);transform-origin:top} 60%{opacity:1;transform:scaleY(1)} 100%{opacity:0;transform:scaleY(1);transform-origin:bottom} }
+
+    /* TICKER */
+    .ticker-wrap {
+      overflow: hidden;
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      background: var(--surface); padding: 0.85rem 0;
+    }
+    .ticker-track {
+      display: flex; gap: 0;
+      animation: ticker 28s linear infinite; width: max-content;
+    }
+    .ticker-item {
+      display: flex; align-items: center; gap: 0.8rem;
+      padding: 0 2.5rem;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); white-space: nowrap;
+    }
+    .ticker-sep { color: var(--accent); font-size: 0.55rem; }
+    @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* METRICS */
+    #metrics {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      border-top: 1px solid var(--border);
+      position: relative; z-index: 1;
+    }
+    .metric {
+      padding: 3rem 2rem; border-right: 1px solid var(--border);
+      text-align: center; position: relative; overflow: hidden;
+      transition: background 0.3s;
+    }
+    .metric:last-child { border-right: none; }
+    .metric::after {
+      content: ''; position: absolute; inset: 0;
+      background: var(--glow); opacity: 0; transition: opacity 0.3s;
+    }
+    .metric:hover::after { opacity: 1; }
+    .metric-num {
+      font-family: var(--head); font-weight: 900; font-size: 3rem;
+      letter-spacing: -0.04em; color: var(--accent); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .metric-label { font-size: 0.75rem; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    /* SECTIONS */
+    section { padding: 8rem 6vw; position: relative; z-index: 1; }
+
+    .s-tag {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 1rem;
+    }
+    .s-tag::before { content: '——'; opacity: 0.35; letter-spacing: 0; font-size: 0.6rem; }
+
+    h2 {
+      font-family: var(--head); font-weight: 900;
+      font-size: clamp(2.1rem, 4.2vw, 3.8rem);
+      line-height: 1.03; letter-spacing: -0.03em; margin-bottom: 1.5rem;
+    }
+
+    /* SERVICES */
+    #servicios { background: var(--bg); }
+    .services-intro {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: end; margin-bottom: 4rem;
+    }
+    .services-intro p { color: var(--muted); font-size: 1.02rem; line-height: 1.9; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: var(--border);
+    }
+    .service-card {
+      background: var(--surface); padding: 2.5rem;
+      position: relative; overflow: hidden; transition: background 0.25s;
+    }
+    .service-card::after {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease;
+    }
+    .service-card:hover { background: var(--panel); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .s-num {
+      font-family: var(--head); font-weight: 900; font-size: 0.6rem;
+      letter-spacing: 0.22em; color: var(--accent); opacity: 0.35; margin-bottom: 1.5rem;
+    }
+    .s-icon { font-size: 1.9rem; margin-bottom: 1.2rem; display: block; }
+    .s-title {
+      font-family: var(--head); font-weight: 700; font-size: 0.95rem;
+      letter-spacing: -0.01em; margin-bottom: 0.7rem; color: var(--white); line-height: 1.35;
+    }
+    .s-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.8; }
+    .s-price {
+      display: inline-block; margin-top: 1.2rem;
+      font-family: var(--head); font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); background: rgba(168,255,62,0.07);
+      border: 1px solid var(--border2); padding: 0.28rem 0.65rem; border-radius: 2px;
+    }
+
+    /* PROCESS */
+    #proceso {
+      background: var(--surface);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .process-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 1px; background: var(--border); margin-top: 4rem;
+    }
+    .step-box {
+      background: var(--bg); padding: 2.5rem 2rem;
+      position: relative; overflow: hidden; transition: background 0.25s;
+    }
+    .step-box:hover { background: var(--panel); }
+    .step-watermark {
+      font-family: var(--head); font-weight: 900; font-size: 5rem;
+      letter-spacing: -0.05em; color: var(--accent); opacity: 0.05;
+      line-height: 1; margin-bottom: -1.5rem; display: block;
+    }
+    .step-circle {
+      width: 38px; height: 38px; border: 1px solid var(--border2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--head); font-weight: 700; font-size: 0.7rem;
+      color: var(--accent); margin-bottom: 1.5rem; position: relative; z-index: 1;
+    }
+    .step-title {
+      font-family: var(--head); font-weight: 700; font-size: 0.88rem;
+      letter-spacing: -0.01em; margin-bottom: 0.6rem;
+    }
+    .step-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.8; }
+
+    /* PORTFOLIO */
+    #portfolio { background: var(--bg); }
+    .portfolio-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr;
+      grid-template-rows: auto auto; gap: 1px;
+      background: var(--border); margin-top: 4rem;
+    }
+    .p-item {
+      background: var(--surface); padding: 2.5rem;
+      position: relative; overflow: hidden; min-height: 220px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      transition: background 0.25s;
+    }
+    .p-item:first-child { grid-row: span 2; min-height: 440px; }
+    .p-item:hover { background: var(--panel); }
+    .p-item::before {
+      content: attr(data-num); position: absolute; top: 1.5rem; right: 1.5rem;
+      font-family: var(--head); font-size: 4.5rem; font-weight: 900;
+      color: var(--accent); opacity: 0.04; line-height: 1; pointer-events: none;
+    }
+    .p-tag {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; opacity: 0.8;
+    }
+    .p-title {
+      font-family: var(--head); font-weight: 700; font-size: 1.1rem;
+      letter-spacing: -0.01em; margin-bottom: 0.5rem;
+    }
+    .p-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
+    .p-arrow {
+      display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 1.2rem;
+      font-size: 0.78rem; font-weight: 600; color: var(--accent);
+      text-decoration: none; opacity: 0; transform: translateX(-8px); transition: all 0.25s;
+    }
+    .p-item:hover .p-arrow { opacity: 1; transform: translateX(0); }
+
+    /* PRICING */
+    #precios {
+      background: var(--surface);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: var(--border); margin-top: 4rem;
+    }
+    .p-card {
+      background: var(--bg); padding: 3rem 2.5rem;
+      position: relative; transition: transform 0.25s;
+    }
+    .p-card.featured {
+      background: var(--panel); border: 1px solid var(--border2); margin: -1px; z-index: 2;
+    }
+    .p-card.featured::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--accent);
+    }
+    .p-card:hover { transform: translateY(-4px); }
+    .p-badge {
+      display: inline-block; font-family: var(--head); font-size: 0.58rem; font-weight: 700;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--bg); background: var(--accent); padding: 0.28rem 0.7rem; margin-bottom: 1.5rem; border-radius: 2px;
+    }
+    .p-name {
+      font-family: var(--head); font-weight: 600; font-size: 0.7rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;
+    }
+    .p-price {
+      font-family: var(--head); font-weight: 900; font-size: 4.2rem;
+      letter-spacing: -0.05em; line-height: 1; color: var(--white); margin-bottom: 0.3rem;
+    }
+    .p-price sup { font-size: 1.4rem; color: var(--muted); vertical-align: super; }
+    .p-period { font-size: 0.8rem; color: var(--muted); margin-bottom: 2rem; }
+    .p-features { list-style: none; margin-bottom: 2rem; }
+    .p-features li {
+      font-size: 0.87rem; color: var(--muted); padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.6rem;
+    }
+    .p-features li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .p-features li.no { color: rgba(86,96,82,0.4); }
+    .p-features li.no::before { content: '–'; color: rgba(86,96,82,0.3); }
+    .btn-plan {
+      width: 100%; padding: 0.85rem;
+      font-family: var(--head); font-weight: 700; font-size: 0.68rem;
+      letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;
+      transition: all 0.2s; text-align: center; display: block;
+      text-decoration: none; border-radius: 2px;
+    }
+    .btn-plan-outline { background: transparent; border: 1px solid rgba(255,255,255,0.1); color: var(--white); }
+    .btn-plan-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-plan-solid { background: var(--accent); border: none; color: var(--bg); }
+    .btn-plan-solid:hover { background: var(--accent2); }
+
+    /* TESTIMONIALS */
+    #testimonios { background: var(--bg); }
+    .t-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: var(--border); margin-top: 4rem;
+    }
+    .t-card {
+      background: var(--surface); padding: 2.5rem;
+      position: relative; overflow: hidden; transition: background 0.25s;
+    }
+    .t-card::before {
+      content: '"'; position: absolute; top: -1.2rem; left: 1.8rem;
+      font-family: var(--head); font-size: 7rem; font-weight: 900;
+      color: var(--accent); opacity: 0.055; line-height: 1; pointer-events: none;
+    }
+    .t-card:hover { background: var(--panel); }
+    .t-stars { color: var(--accent); font-size: 0.8rem; letter-spacing: 0.18em; margin-bottom: 1.2rem; }
+    .t-text { font-size: 0.9rem; color: rgba(236,238,232,0.68); line-height: 1.85; font-style: italic; margin-bottom: 1.5rem; }
+    .t-author { display: flex; align-items: center; gap: 0.8rem; }
+    .t-av {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #5BD400);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--head); font-weight: 700; font-size: 0.75rem;
+      color: var(--bg); flex-shrink: 0;
+    }
+    .t-name { font-family: var(--head); font-weight: 600; font-size: 0.85rem; }
+    .t-role { font-size: 0.73rem; color: var(--muted); margin-top: 0.1rem; }
+
+    /* CONTACT */
+    #contacto { background: var(--surface); border-top: 1px solid var(--border); }
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.3fr; gap: 6rem; margin-top: 2rem; }
+    .contact-info h3 {
+      font-family: var(--head); font-weight: 700; font-size: 1.3rem;
+      line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem;
+    }
+    .contact-info p { color: var(--muted); font-size: 0.92rem; line-height: 1.9; margin-bottom: 2.5rem; }
+    .c-links { display: flex; flex-direction: column; gap: 0.7rem; }
+    .c-link {
+      display: flex; align-items: center; gap: 1rem; padding: 1rem 1.2rem;
+      border: 1px solid var(--border); text-decoration: none; color: var(--white);
+      transition: all 0.2s; border-radius: 2px;
+    }
+    .c-link:hover { border-color: var(--border2); background: var(--glow); }
+    .c-icon { font-size: 1.1rem; }
+    .c-label { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; }
+    .c-value { font-weight: 500; font-size: 0.88rem; margin-top: 0.1rem; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 0.85rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+    .form-group input, .form-group textarea, .form-group select {
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--white); font-family: var(--body); font-size: 0.9rem;
+      padding: 0.82rem 1rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+      resize: none; appearance: none; border-radius: 2px;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      border-color: rgba(168,255,62,0.38); box-shadow: 0 0 0 3px rgba(168,255,62,0.06);
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(86,96,82,0.5); }
+    .form-group textarea { min-height: 110px; }
+    .form-submit {
+      background: var(--accent); color: var(--bg); border: none;
+      font-family: var(--head); font-weight: 700; font-size: 0.72rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 1rem 2rem; cursor: pointer; transition: all 0.2s;
+      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+      width: 100%; border-radius: 2px;
+    }
+    .form-submit:hover { background: var(--accent2); }
+    .form-success {
+      display: none; background: rgba(168,255,62,0.07); border: 1px solid var(--border2);
+      color: var(--accent); padding: 1rem; font-size: 0.86rem; text-align: center; border-radius: 2px;
+    }
+
+    /* FAQ */
+    #faq { background: var(--bg); }
+    .faq-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 6rem; }
+    .faq-sticky { position: sticky; top: 88px; }
+    .faq-list { margin-top: 1rem; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.3rem 0; cursor: pointer;
+      font-family: var(--head); font-weight: 600; font-size: 0.88rem;
+      color: var(--white); transition: color 0.2s; gap: 1rem; line-height: 1.4;
+    }
+    .faq-q:hover { color: var(--accent); }
+    .faq-icon {
+      width: 22px; height: 22px; border: 1px solid var(--border); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; flex-shrink: 0; color: var(--accent); transition: all 0.3s;
+    }
+    .faq-item.open .faq-icon { background: var(--accent); color: var(--bg); transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s;
+      font-size: 0.88rem; color: var(--muted); line-height: 1.85;
+    }
+    .faq-item.open .faq-a { max-height: 220px; padding-bottom: 1.4rem; }
+
+    /* CTA BAND */
+    #cta-band {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 7rem 6vw; text-align: center;
+      position: relative; z-index: 1; overflow: hidden;
+    }
+    #cta-band::before {
+      content: ''; position: absolute; width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(168,255,62,0.07) 0%, transparent 70%);
+      top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none;
+    }
+    #cta-band h2 { font-size: clamp(2.5rem, 5.5vw, 5.5rem); margin-bottom: 1.5rem; position: relative; z-index: 1; }
+    #cta-band p { color: var(--muted); font-size: 1.02rem; max-width: 460px; margin: 0 auto 3rem; line-height: 1.9; position: relative; z-index: 1; }
+
+    /* FOOTER */
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 4rem 6vw 2rem; }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
+    .footer-brand p { color: var(--muted); font-size: 0.86rem; line-height: 1.8; margin-top: 1rem; }
+    .footer-col-title {
+      font-family: var(--head); font-weight: 700; font-size: 0.65rem;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-links a { font-size: 0.86rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-copy { font-size: 0.76rem; color: var(--muted); }
+    .footer-accent { color: var(--accent); }
+
+    /* CHATBOT BTN */
+    #chatbot-btn {
+      position: fixed; bottom: 2rem; right: 2rem;
+      width: 52px; height: 52px; background: var(--accent);
+      border: none; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 900; color: var(--bg);
+      box-shadow: 0 4px 30px rgba(168,255,62,0.28);
+      transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    #chatbot-btn:hover { transform: scale(1.1); box-shadow: 0 6px 40px rgba(168,255,62,0.45); }
+    #chatbot-btn svg { width: 21px; height: 21px; }
+    .btn-ring {
+      position: absolute; border-radius: 50%;
+      border: 1px solid rgba(168,255,62,0.28);
+      animation: btnPulse 3s ease infinite; pointer-events: none;
+    }
+    .btn-ring:nth-child(1) { inset: -6px; }
+    .btn-ring:nth-child(2) { inset: -13px; border-color: rgba(168,255,62,0.1); animation-delay: 1s; }
+    @keyframes btnPulse { 0%{opacity:1;transform:scale(1)} 100%{opacity:0;transform:scale(1.5)} }
+    .notif-dot {
+      position: absolute; top: 3px; right: 3px;
+      width: 10px; height: 10px; background: #FF4D3A;
+      border-radius: 50%; border: 2px solid var(--bg);
+    }
+
+    /* CHATBOT WINDOW */
+    #chatbot-window {
+      position: fixed; bottom: 5.5rem; right: 2rem;
+      width: 390px; height: 570px;
+      background: var(--panel); border: 1px solid var(--border2);
+      border-radius: 4px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.02), 0 0 60px rgba(168,255,62,0.04);
+      z-index: 800; display: flex; flex-direction: column; overflow: hidden;
+      transform: translateY(14px) scale(0.96); opacity: 0; pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), opacity 0.22s ease;
+    }
+    #chatbot-window.open { transform: translateY(0) scale(1); opacity: 1; pointer-events: all; }
+
+    .chat-header {
+      padding: 1rem 1.3rem; background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+      position: relative;
+    }
+    .chat-header::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.25;
+    }
+    .chat-header-left { display: flex; align-items: center; gap: 0.8rem; }
+    .chat-av-wrap { position: relative; }
+    .chat-av {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(168,255,62,0.18), rgba(168,255,62,0.04));
+      border: 1px solid var(--border2);
+      display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+    }
+    .online-dot {
+      position: absolute; bottom: 0px; right: 0px;
+      width: 8px; height: 8px; background: var(--accent);
+      border-radius: 50%; border: 2px solid var(--panel);
+    }
+    .chat-name { font-family: var(--head); font-weight: 700; font-size: 0.85rem; }
+    .chat-status {
+      font-size: 0.68rem; color: var(--accent); display: flex; align-items: center;
+      gap: 0.3rem; margin-top: 0.1rem;
+    }
+    .chat-status::before { content:''; width:5px; height:5px; border-radius:50%; background:currentColor; animation:statusBlink 2.5s ease infinite; }
+    @keyframes statusBlink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    .chat-action-btn {
+      background: none; border: none; color: var(--muted); cursor: pointer;
+      padding: 0.28rem; border-radius: 3px;
+      display: flex; align-items: center; justify-content: center; transition: color 0.2s;
+      width: 28px; height: 28px;
+    }
+    .chat-action-btn:hover { color: var(--white); }
+    .chat-action-btn svg { width: 14px; height: 14px; }
+
+    .chat-messages {
+      flex: 1; overflow-y: auto; padding: 1rem 1rem 0.5rem;
+      display: flex; flex-direction: column; gap: 0.5rem;
+      scroll-behavior: smooth; scrollbar-width: thin;
+      scrollbar-color: rgba(168,255,62,0.1) transparent;
+    }
+    .chat-messages::-webkit-scrollbar { width: 3px; }
+    .chat-messages::-webkit-scrollbar-thumb { background: rgba(168,255,62,0.12); border-radius: 2px; }
+
+    .date-divider {
+      display: flex; align-items: center; gap: 0.8rem;
+      font-size: 0.62rem; color: var(--muted); letter-spacing: 0.14em;
+      text-transform: uppercase; margin: 0.4rem 0;
+    }
+    .date-divider::before, .date-divider::after { content:''; flex:1; height:1px; background:var(--border); }
+
+    .msg-row { display: flex; flex-direction: column; animation: msgIn 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+    .msg-row.user { align-items: flex-end; }
+    .msg-row.bot  { align-items: flex-start; }
+    @keyframes msgIn { from{opacity:0;transform:translateY(8px) scale(0.97)} to{opacity:1;transform:translateY(0) scale(1)} }
+
+    .bot-row-wrap { display: flex; align-items: flex-end; gap: 0.5rem; }
+    .bot-mini-av {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(168,255,62,0.18), rgba(168,255,62,0.04));
+      border: 1px solid var(--border2);
+      display: flex; align-items: center; justify-content: center; font-size: 0.68rem; flex-shrink: 0;
+    }
+    .chat-bubble {
+      max-width: 82%; padding: 0.72rem 0.9rem;
+      font-size: 0.84rem; line-height: 1.68; word-break: break-word; border-radius: 4px;
+    }
+    .msg-row.bot .chat-bubble {
+      background: var(--surface); border: 1px solid var(--border); color: var(--white);
+      border-bottom-left-radius: 2px;
+    }
+    .msg-row.user .chat-bubble {
+      background: rgba(168,255,62,0.1); border: 1px solid var(--border2); color: var(--white);
+      border-bottom-right-radius: 2px;
+    }
+    .chat-bubble strong { color: var(--accent2); font-weight: 600; }
+    .msg-time { font-size: 0.6rem; color: var(--muted); margin-top: 0.22rem; padding: 0 0.2rem; }
+    .msg-row.user .msg-time { text-align: right; }
+    .tick-icon { color: var(--accent); }
+
+    .typing-row { display: flex; align-items: flex-end; gap: 0.5rem; animation: msgIn 0.3s ease; }
+    .typing-bubble {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 4px; border-bottom-left-radius: 2px; padding: 0.65rem 0.9rem;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .typing-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; opacity: 0.25; animation: typePulse 1.4s ease infinite; }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes typePulse { 0%,80%,100%{opacity:0.2;transform:scale(0.8)} 40%{opacity:1;transform:scale(1.1)} }
+
+    .quick-replies { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0 1rem 0.7rem; }
+    .qr-btn {
+      background: transparent; border: 1px solid var(--border2);
+      color: var(--accent); font-family: var(--body); font-size: 0.74rem;
+      font-weight: 500; padding: 0.32rem 0.72rem; cursor: pointer;
+      border-radius: 20px; transition: all 0.2s; white-space: nowrap;
+    }
+    .qr-btn:hover { background: rgba(168,255,62,0.08); border-color: var(--accent); }
+
+    .chat-input-area {
+      padding: 0.8rem; background: var(--surface); border-top: 1px solid var(--border);
+      display: flex; align-items: flex-end; gap: 0.5rem; flex-shrink: 0;
+    }
+    .input-wrapper { flex: 1; }
+    .chat-input {
+      width: 100%; background: var(--bg); border: 1px solid var(--border);
+      color: var(--white); font-family: var(--body); font-size: 0.84rem;
+      padding: 0.62rem 0.9rem; outline: none; border-radius: 4px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      resize: none; min-height: 38px; max-height: 96px; overflow-y: auto; line-height: 1.5;
+    }
+    .chat-input:focus { border-color: rgba(168,255,62,0.32); box-shadow: 0 0 0 3px rgba(168,255,62,0.05); }
+    .chat-input::placeholder { color: rgba(86,96,82,0.5); }
+    .send-btn {
+      width: 38px; height: 38px; background: var(--accent); border: none; border-radius: 4px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s; flex-shrink: 0; color: var(--bg);
+    }
+    .send-btn:hover { background: var(--accent2); transform: scale(1.05); }
+    .send-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+    .send-btn svg { width: 14px; height: 14px; }
+
+    .chat-footer {
+      padding: 0.42rem 1rem; background: var(--surface); border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center; gap: 0.3rem;
+      font-size: 0.6rem; color: rgba(86,96,82,0.5); flex-shrink: 0;
+    }
+    .chat-footer a { color: rgba(168,255,62,0.32); text-decoration: none; }
+    .chat-footer a:hover { color: var(--accent); }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp   { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* MOBILE */
+    @media(max-width:900px) {
+      nav { display: none; }
+      .services-intro, .contact-layout, .faq-layout, .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+      .services-grid, .pricing-grid, .t-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .p-item:first-child { grid-row: span 1; min-height: 220px; }
+      #chatbot-window { width: calc(100vw - 2rem); right: 1rem; bottom: 5rem; }
+      #metrics { grid-template-columns: 1fr 1fr; }
+      section { padding: 5rem 6vw; }
+      .form-row { grid-template-columns: 1fr; }
+      .ticker-wrap { display: none; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- CURSOR -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
 <!-- HEADER -->
-<header>
-  <a href="#" class="logo"><span>404</span> Digitals</a>
+<header id="mainHeader">
+  <a href="#" class="logo"><em>404</em> Digitals</a>
   <nav>
     <a href="#servicios">Servicios</a>
     <a href="#proceso">Proceso</a>
@@ -96,354 +759,224 @@
     <a href="#testimonios">Clientes</a>
     <a href="#contacto">Contacto</a>
   </nav>
-  <a href="#contacto" class="nav-cta">Empezar proyecto →</a>
+  <a href="#contacto" class="nav-cta">Empezar →</a>
 </header>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-eyebrow">Agencia Marketing Digital · Oviedo, Asturias</div>
-  <h1>
-    Agencia de marketing digital en <span class="line2">Oviedo</span>
+  <div class="hero-tag">
+    <div class="hero-tag-dot"></div>
+    Soluciones Digitales · Oviedo
+  </div>
+  <h1 class="hero-h1">
+    <span class="white-line">Tu negocio merece</span>
+    <span class="accent-line">presencia digital real</span>
   </h1>
-  <p class="hero-sub">Webs que convierten, SEO que posiciona en Google y automatizaciones con IA. Ayudamos a negocios en Oviedo, Gijón y toda Asturias a crecer online.</p>
-  <div class="hero-btns">
+  <p class="hero-sub">Webs que convierten, SEO que posiciona y automatizaciones con IA que ahorran tiempo. Todo lo que necesitas para crecer online.</p>
+  <div class="hero-actions">
     <a href="#contacto" class="btn-primary">Empezar ahora →</a>
     <a href="#servicios" class="btn-ghost">Ver servicios</a>
   </div>
-  <p style="max-width:680px;margin:3rem auto 0;font-size:0.9rem;color:var(--muted);line-height:1.8;text-align:center;">Somos una <strong style="color:var(--white)">agencia de marketing digital en Oviedo</strong> especializada en diseño web, posicionamiento SEO y automatización con inteligencia artificial. Ayudamos a empresas en Oviedo, Gijón y toda Asturias a aumentar su visibilidad en Google y captar más clientes.</p>
   <div class="scroll-hint">
-    <span></span>
+    <span class="scroll-label">Scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
 
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Diseño Web</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> SEO Local</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Automatizaciones IA</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Chatbots 24/7</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Analítica Web</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> E-commerce</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Mantenimiento</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Landing Pages</div>
+    <!-- repeat for seamless loop -->
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Diseño Web</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> SEO Local</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Automatizaciones IA</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Chatbots 24/7</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Analítica Web</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> E-commerce</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Mantenimiento</div>
+    <div class="ticker-item"><span class="ticker-sep">✦</span> Landing Pages</div>
+  </div>
+</div>
+
 <!-- METRICS -->
 <div id="metrics">
-  <div class="metric reveal">
-    <div class="metric-num">+10</div>
-    <div class="metric-label">Proyectos entregados</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">5★</div>
-    <div class="metric-label">Valoración media</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">24h</div>
-    <div class="metric-label">Tiempo de respuesta</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">100%</div>
-    <div class="metric-label">Clientes satisfechos</div>
-  </div>
+  <div class="metric reveal"><div class="metric-num">+10</div><div class="metric-label">Proyectos entregados</div></div>
+  <div class="metric reveal"><div class="metric-num">4.8★</div><div class="metric-label">Valoración media</div></div>
+  <div class="metric reveal"><div class="metric-num">24h</div><div class="metric-label">Tiempo de respuesta</div></div>
+  <div class="metric reveal"><div class="metric-num">100%</div><div class="metric-label">Clientes satisfechos</div></div>
 </div>
 
 <!-- SERVICIOS -->
 <section id="servicios">
   <div class="services-intro">
     <div>
-      <div class="section-tag">Servicios</div>
+      <div class="s-tag">Servicios</div>
       <h2>Lo que hacemos<br>mejor</h2>
     </div>
-    <p>Somos la agencia de marketing digital en Oviedo especializada en los tres pilares del crecimiento online: diseño web que convierte, SEO en Asturias que posiciona en Google y automatizaciones con IA que trabajan por ti 24 horas al día.</p>
+    <p>Nos especializamos en los tres pilares del crecimiento digital: una web que convierte, visibilidad en buscadores y procesos automatizados que trabajan por ti las 24 horas.</p>
   </div>
   <div class="services-grid">
-    <div class="service-card reveal">
-      <div class="service-num">01</div>
-      <span class="service-icon">🌐</span>
-      <div class="service-title">Webs y Landing Pages</div>
-      <p class="service-desc">Diseño y desarrollo a medida. Cada web está pensada para convertir visitantes en clientes desde el primer segundo.</p>
-      <span class="service-tag">Desde 490€</span>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-num">02</div>
-      <span class="service-icon">📈</span>
-      <div class="service-title">SEO Local en Oviedo y Posicionamiento Google</div>
-      <p class="service-desc">Aparece en Google cuando tus clientes buscan servicios en Oviedo y Asturias. Estrategia de SEO local orientada a resultados medibles y posicionamiento duradero.</p>
-      <span class="service-tag">A medida</span>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-num">03</div>
-      <span class="service-icon">🤖</span>
-      <div class="service-title">Automatizaciones e IA</div>
-      <p class="service-desc">Chatbots inteligentes, recepcionistas de IA que atienden llamadas y consultas 24/7, flujos automáticos y herramientas de IA que ahorran horas de trabajo manual cada semana. Tu negocio nunca cierra.</p>
-      <span class="service-tag">A medida</span>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-num">04</div>
-      <span class="service-icon">🔧</span>
-      <div class="service-title">Mantenimiento Web</div>
-      <p class="service-desc">Tu web siempre actualizada, segura y optimizada. Soporte técnico incluido y actualizaciones mensuales.</p>
-      <span class="service-tag">Incluido en planes</span>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-num">05</div>
-      <span class="service-icon">📊</span>
-      <div class="service-title">Analítica y Conversión</div>
-      <p class="service-desc">Medimos todo lo que importa. Informes claros, tests A/B y optimización continua para mejorar tus resultados.</p>
-      <span class="service-tag">Incluido en planes</span>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-num">06</div>
-      <span class="service-icon">📱</span>
-      <div class="service-title">Redes Sociales y Contenido</div>
-      <p class="service-desc">Estrategia de contenido y gestión de redes para que tu marca tenga presencia consistente y profesional.</p>
-      <span class="service-tag">Consultar</span>
-    </div>
+    <div class="service-card reveal"><div class="s-num">01</div><span class="s-icon">🌐</span><div class="s-title">Webs y Landing Pages</div><p class="s-desc">Diseño y desarrollo a medida. Cada web está pensada para convertir visitantes en clientes desde el primer segundo.</p><span class="s-price">Desde 490€</span></div>
+    <div class="service-card reveal"><div class="s-num">02</div><span class="s-icon">📈</span><div class="s-title">SEO Local y Posicionamiento</div><p class="s-desc">Aparece en Google cuando tus clientes te buscan. Estrategia SEO enfocada en resultados medibles y duraderos.</p><span class="s-price">Desde 69€/mes</span></div>
+    <div class="service-card reveal"><div class="s-num">03</div><span class="s-icon">🤖</span><div class="s-title">Automatizaciones e IA</div><p class="s-desc">Chatbots inteligentes, flujos automáticos y herramientas de IA que ahorran horas de trabajo manual cada semana.</p><span class="s-price">A medida</span></div>
+    <div class="service-card reveal"><div class="s-num">04</div><span class="s-icon">🔧</span><div class="s-title">Mantenimiento Web</div><p class="s-desc">Tu web siempre actualizada, segura y optimizada. Soporte técnico incluido y actualizaciones mensuales.</p><span class="s-price">Desde 39€/mes</span></div>
+    <div class="service-card reveal"><div class="s-num">05</div><span class="s-icon">📊</span><div class="s-title">Analítica y Conversión</div><p class="s-desc">Medimos todo lo que importa. Informes claros, tests A/B y optimización continua para mejorar tus resultados.</p><span class="s-price">Incluido en planes</span></div>
+    <div class="service-card reveal"><div class="s-num">06</div><span class="s-icon">📱</span><div class="s-title">Redes Sociales y Contenido</div><p class="s-desc">Estrategia de contenido y gestión de redes para que tu marca tenga presencia consistente y profesional.</p><span class="s-price">Consultar</span></div>
   </div>
 </section>
 
 <!-- PROCESO -->
 <section id="proceso">
-  <div class="section-tag">Cómo trabajamos</div>
+  <div class="s-tag">Cómo trabajamos</div>
   <h2>Proceso claro,<br>resultados reales</h2>
-  <div class="process-steps">
-    <div class="step reveal">
-      <div class="step-circle">01</div>
-      <div class="step-title">Diagnóstico</div>
-      <p class="step-desc">Analizamos tu situación actual, competencia y objetivos. Primera reunión gratuita y sin compromiso.</p>
-    </div>
-    <div class="step reveal">
-      <div class="step-circle">02</div>
-      <div class="step-title">Estrategia</div>
-      <p class="step-desc">Diseñamos un plan de acción personalizado con plazos, herramientas y métricas de éxito claras.</p>
-    </div>
-    <div class="step reveal">
-      <div class="step-circle">03</div>
-      <div class="step-title">Ejecución</div>
-      <p class="step-desc">Desarrollamos e implementamos. Te mantenemos informado en cada fase con acceso a seguimiento en tiempo real.</p>
-    </div>
-    <div class="step reveal">
-      <div class="step-circle">04</div>
-      <div class="step-title">Optimización</div>
-      <p class="step-desc">Medimos resultados, ajustamos y mejoramos continuamente. El trabajo no termina con la entrega.</p>
-    </div>
+  <div class="process-grid">
+    <div class="step-box reveal"><span class="step-watermark">01</span><div class="step-circle">01</div><div class="step-title">Diagnóstico</div><p class="step-desc">Analizamos tu situación actual, competencia y objetivos. Primera reunión gratuita y sin compromiso.</p></div>
+    <div class="step-box reveal"><span class="step-watermark">02</span><div class="step-circle">02</div><div class="step-title">Estrategia</div><p class="step-desc">Diseñamos un plan de acción personalizado con plazos, herramientas y métricas de éxito claras.</p></div>
+    <div class="step-box reveal"><span class="step-watermark">03</span><div class="step-circle">03</div><div class="step-title">Ejecución</div><p class="step-desc">Desarrollamos e implementamos. Te mantenemos informado en cada fase con acceso a seguimiento.</p></div>
+    <div class="step-box reveal"><span class="step-watermark">04</span><div class="step-circle">04</div><div class="step-title">Optimización</div><p class="step-desc">Medimos resultados, ajustamos y mejoramos continuamente. El trabajo no termina con la entrega.</p></div>
   </div>
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
-  <div class="section-tag">Marketing Digital Oviedo</div>
-  <h2>Servicios de marketing digital<br>para empresas en Asturias</h2>
+  <div class="s-tag">Portfolio</div>
+  <h2>Proyectos recientes</h2>
   <div class="portfolio-grid">
-    <div class="portfolio-item reveal" data-num="01">
-      <div class="portfolio-tag">Web + SEO</div>
-      <div class="portfolio-title">Negocios Locales</div>
-      <p class="portfolio-desc">Creamos páginas web estratégicas diseñadas para atraer clientes en tu ciudad. Combinamos diseño profesional, velocidad y optimización para buscadores para que tu negocio aparezca cuando las personas buscan tus servicios en Google y convierta visitas en contactos reales.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="02">
-      <div class="portfolio-tag">Automatización IA</div>
-      <div class="portfolio-title">Empresas de Servicios</div>
-      <p class="portfolio-desc">Implementamos chatbots, recepcionistas de IA y sistemas de automatización que responden consultas, gestionan solicitudes y atienden a tus clientes 24/7 sin intervención humana, permitiendo que tu equipo se centre en lo que realmente importa.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="03">
-      <div class="portfolio-tag">SEO Local</div>
-      <div class="portfolio-title">Restaurante</div>
-      <p class="portfolio-desc">Optimizamos la presencia digital de restaurantes para aparecer en los primeros resultados de Google cuando los clientes buscan dónde comer, aumentando visibilidad y reservas.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="04">
-      <div class="portfolio-tag">E-commerce</div>
-      <div class="portfolio-title">Tiendas Online</div>
-      <p class="portfolio-desc">Desarrollamos tiendas online completas con catálogo de productos, pasarela de pago integrada y una experiencia de compra diseñada para maximizar las ventas.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="05">
-      <div class="portfolio-tag">Web + Mantenimiento</div>
-      <div class="portfolio-title">Servicios Profesionales</div>
-      <p class="portfolio-desc">Creamos páginas web profesionales para empresas que necesitan transmitir confianza y atraer nuevos clientes, incluyendo mantenimiento, seguridad y optimización continua.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
+    <div class="p-item reveal" data-num="01"><div class="p-tag">Web + SEO</div><div class="p-title">Clínica Dental</div><p class="p-desc">Landing page de alta conversión con chatbot de citas integrado. +340% en consultas online en 3 meses.</p><a href="#contacto" class="p-arrow">Saber más →</a></div>
+    <div class="p-item reveal" data-num="02"><div class="p-tag">Automatización IA</div><div class="p-title">Taller Mecánico</div><p class="p-desc">Chatbot de presupuestos automáticos. Ahorra horas diarias y facilita el trabajo al equipo.</p><a href="#contacto" class="p-arrow">Saber más →</a></div>
+    <div class="p-item reveal" data-num="03"><div class="p-tag">SEO Local</div><div class="p-title">Restaurante</div><p class="p-desc">Top 3 en búsquedas Google en 4 meses.</p><a href="#contacto" class="p-arrow">Saber más →</a></div>
+    <div class="p-item reveal" data-num="04"><div class="p-tag">E-commerce</div><div class="p-title">Tienda de Moda Local</div><p class="p-desc">Tienda online completa con +200 productos y pasarela de pago integrada.</p><a href="#contacto" class="p-arrow">Saber más →</a></div>
+    <div class="p-item reveal" data-num="05"><div class="p-tag">Web + Mantenimiento</div><div class="p-title">Despacho de Abogados</div><p class="p-desc">Web profesional con formulario de consultas y blog SEO activo.</p><a href="#contacto" class="p-arrow">Saber más →</a></div>
   </div>
 </section>
 
 <!-- PRECIOS -->
 <section id="precios">
-  <div class="section-tag">Precios</div>
+  <div class="s-tag">Precios</div>
   <h2>Tarifas transparentes,<br>sin sorpresas</h2>
   <div class="pricing-grid">
-    <div class="pricing-card reveal">
-      <div class="pricing-name">Básico</div>
-      <div class="pricing-price"><span>€</span>490</div>
-      <div class="pricing-period">+ 39€/mes mantenimiento</div>
-      <ul class="pricing-features">
-        <li>Landing page profesional</li>
-        <li>Diseño a medida</li>
-        <li>Responsive móvil</li>
-        <li>Formulario de contacto</li>
-        <li>Integración WhatsApp</li>
-        <li class="no">SEO avanzado</li>
-        <li class="no">Chatbot IA</li>
-        <li class="no">Mantenimiento incluido</li>
+    <div class="p-card reveal">
+      <div class="p-name">Básico</div>
+      <div class="p-price"><sup>€</sup>490</div>
+      <div class="p-period">+ 39€/mes todo incluido</div>
+      <ul class="p-features">
+        <li>Landing page profesional</li><li>Diseño a medida</li><li>Responsive móvil</li>
+        <li>Formulario de contacto</li><li>Integración WhatsApp</li>
+        <li class="no">SEO avanzado</li><li class="no">Chatbot IA</li><li class="no">Mantenimiento incluido</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar info</a>
+      <a href="#contacto" class="btn-plan btn-plan-outline">Solicitar info</a>
     </div>
-    <div class="pricing-card featured reveal">
-      <div class="pricing-badge">Más popular</div>
-      <div class="pricing-name">Profesional</div>
-      <div class="pricing-price"><span>€</span>690</div>
-      <div class="pricing-period">+ 69€/mes mantenimiento</div>
-      <ul class="pricing-features">
-        <li>Web completa multi-sección</li>
-        <li>Diseño premium a medida</li>
-        <li>SEO local optimizado</li>
-        <li>Chatbot básico incluido</li>
-        <li>Analytics configurado</li>
-        <li>Formularios avanzados</li>
-        <li>1 mes mantenimiento gratis</li>
-        <li class="no">Automatizaciones IA</li>
+    <div class="p-card featured reveal">
+      <div class="p-badge">Más popular</div>
+      <div class="p-name">Profesional</div>
+      <div class="p-price"><sup>€</sup>690</div>
+      <div class="p-period">+ 69€/mes mantenimiento</div>
+      <ul class="p-features">
+        <li>Web completa multi-sección</li><li>Diseño premium a medida</li><li>SEO local optimizado</li>
+        <li>Chatbot básico incluido</li><li>Analytics configurado</li><li>Formularios avanzados</li>
+        <li>1 mes mantenimiento gratis</li><li class="no">Automatizaciones IA</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-solid">Empezar ahora</a>
+      <a href="#contacto" class="btn-plan btn-plan-solid">Empezar ahora</a>
     </div>
-    <div class="pricing-card reveal">
-      <div class="pricing-name">Premium</div>
-      <div class="pricing-price"><span>€</span>900</div>
-      <div class="pricing-period">+ 99€/mes todo incluido</div>
-      <ul class="pricing-features">
-        <li>Web completa avanzada</li>
-        <li>Chatbot IA personalizado</li>
-        <li>SEO + contenido mensual</li>
-        <li>Automatizaciones a medida</li>
-        <li>Informes mensuales</li>
-        <li>Soporte prioritario</li>
-        <li>Tests A/B incluidos</li>
-        <li>Optimización continua</li>
+    <div class="p-card reveal">
+      <div class="p-name">Premium</div>
+      <div class="p-price"><sup>€</sup>900</div>
+      <div class="p-period">+ 99€/mes todo incluido</div>
+      <ul class="p-features">
+        <li>Web completa avanzada</li><li>Chatbot IA personalizado</li><li>SEO + contenido mensual</li>
+        <li>Automatizaciones a medida</li><li>Informes mensuales</li><li>Soporte prioritario</li>
+        <li>Tests A/B incluidos</li><li>Optimización continua</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar info</a>
+      <a href="#contacto" class="btn-plan btn-plan-outline">Solicitar info</a>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIOS -->
 <section id="testimonios">
-  <div class="section-tag">Clientes</div>
+  <div class="s-tag">Clientes</div>
   <h2>Lo que dicen<br>de nosotros</h2>
-  <div class="testimonials-grid">
-    <div class="testimonial-card reveal">
-      <div class="t-stars">★★★★★</div>
-      <p class="t-text">En tres meses triplicamos las consultas online. El chatbot que instalaron responde a los clientes a las 3 de la mañana. Increíble retorno de inversión.</p>
-      <div class="t-author">
-        <div class="t-avatar">DM</div>
-        <div>
-          <div class="t-name">Dr. David M.</div>
-          <div class="t-role">Clínica Dental en Oviedo (cliente SEO + Web)</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card reveal">
+  <div class="t-grid">
+    <div class="t-card reveal">
       <div class="t-stars">★★★★★</div>
       <p class="t-text">Antes no aparecíamos en Google. Ahora somos los primeros cuando alguien busca nuestro sector en Asturias. El trabajo de SEO habla por sí solo.</p>
-      <div class="t-author">
-        <div class="t-avatar">LR</div>
-        <div>
-          <div class="t-name">Laura R.</div>
-          <div class="t-role">Restaurante en Gijón (cliente SEO Local)</div>
-        </div>
-      </div>
+      <div class="t-author"><div class="t-av">LR</div><div><div class="t-name">Laura R.</div><div class="t-role">Restaurante La Sidra · Gijón</div></div></div>
     </div>
-    <div class="testimonial-card reveal">
+    <div class="t-card reveal">
       <div class="t-stars">★★★★★</div>
       <p class="t-text">La web que me hicieron es exactamente lo que necesitaba. Profesional, rápida y mis clientes siempre me la mencionan. El soporte post-entrega es excelente.</p>
-      <div class="t-author">
-        <div class="t-avatar">MS</div>
-        <div>
-          <div class="t-name">Marcos S.</div>
-          <div class="t-role">Taller en Oviedo (cliente Diseño Web)</div>
-        </div>
-      </div>
+      <div class="t-author"><div class="t-av">MS</div><div><div class="t-name">Marcos S.</div><div class="t-role">Taller AutoOviedo</div></div></div>
+    </div>
+    <div class="t-card reveal">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">El chatbot atiende a los pacientes a las 3 de la mañana. Increíble retorno de inversión, triplicamos las consultas en solo 3 meses.</p>
+      <div class="t-author"><div class="t-av">DM</div><div><div class="t-name">Dr. David M.</div><div class="t-role">Clínica Dental · Oviedo</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto">
-  <div class="section-tag">Contacto</div>
+  <div class="s-tag">Contacto</div>
   <h2>Hablemos de<br>tu proyecto</h2>
   <div class="contact-layout">
     <div class="contact-info">
       <h3>Empecemos con<br>una reunión gratuita</h3>
-      <p>Sin compromiso. En 24 horas analizamos tu situación y te decimos exactamente lo que necesitas (y lo que no).</p>
-      <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#043034302a606d636d70656877446369656d682a676b69" class="contact-link">
-          <span class="contact-link-icon">✉️</span>
-          <div>
-            <div class="contact-link-label">Email</div>
-            <div class="contact-link-value"><span class="__cf_email__" data-cfemail="516561657f3538363825303d2211363c30383d7f323e3c">404.digitals@gmail.com</span></div>
-          </div>
+      <p>Sin compromiso. En 30 minutos analizamos tu situación y te decimos exactamente lo que necesitas (y lo que no).</p>
+      <div class="c-links">
+        <a href="mailto:404digitals@gmail.com" class="c-link">
+          <span class="c-icon">✉️</span>
+          <div><div class="c-label">Email</div><div class="c-value">404digitals@gmail.com</div></div>
         </a>
-        <a href="https://wa.me/34985000000" class="contact-link">
-          <span class="contact-link-icon">💬</span>
-          <div>
-            <div class="contact-link-label">WhatsApp</div>
-            <div class="contact-link-value">+34 654 10 17 80</div>
-          </div>
+        <a href="https://wa.me/34654101780" class="c-link">
+          <span class="c-icon">💬</span>
+          <div><div class="c-label">WhatsApp</div><div class="c-value">+34 654 10 17 80</div></div>
         </a>
-        <a href="tel:+34 654 10 17 80" class="contact-link">
-          <span class="contact-link-icon">📞</span>
-          <div>
-            <div class="contact-link-label">Teléfono</div>
-            <div class="contact-link-value">+34 654 10 17 80</div>
-          </div>
+        <a href="tel:+34622203296" class="c-link">
+          <span class="c-icon">📞</span>
+          <div><div class="c-label">Teléfono</div><div class="c-value">+34 622 20 32 96</div></div>
         </a>
       </div>
     </div>
     <div>
-      <!-- iframe oculto: recibe respuesta de Make sin CORS ni redirección -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-
       <form class="contact-form" id="contactForm"
             action="https://hook.eu1.make.com/ew9uflt7da1ivljkxrbcezslbfvsxd8y"
-            method="POST"
-            target="hidden_iframe"
-            onsubmit="formEnviado()">
-
+            method="POST" target="hidden_iframe" onsubmit="formEnviado()">
         <div class="form-row">
-          <div class="form-group">
-            <label for="f-nombre">Nombre</label>
-            <input id="f-nombre" name="nombre" type="text" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="f-apellidos">Apellidos</label>
-            <input id="f-apellidos" name="apellidos" type="text" placeholder="Tus apellidos" required />
-          </div>
+          <div class="form-group"><label>Nombre</label><input name="nombre" type="text" placeholder="Tu nombre" required/></div>
+          <div class="form-group"><label>Apellidos</label><input name="apellidos" type="text" placeholder="Tus apellidos" required/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" placeholder="tu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="f-telefono">Teléfono</label>
-            <input id="f-telefono" name="telefono" type="tel" placeholder="+34 600 000 000" />
-          </div>
+          <div class="form-group"><label>Email</label><input name="email" type="email" placeholder="tu@email.com" required/></div>
+          <div class="form-group"><label>Teléfono</label><input name="telefono" type="tel" placeholder="+34 600 000 000"/></div>
         </div>
         <div class="form-row">
+          <div class="form-group"><label>Empresa</label><input name="empresa" type="text" placeholder="Tu empresa"/></div>
           <div class="form-group">
-            <label for="f-empresa">Empresa</label>
-            <input id="f-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" />
-          </div>
-          <div class="form-group">
-            <label for="f-servicio">Servicio</label>
-            <select id="f-servicio" name="servicio" required>
+            <label>Servicio</label>
+            <select name="servicio" required>
               <option value="">¿Qué necesitas?</option>
-              <option value="Web / Landing page">Web / Landing page</option>
-              <option value="SEO local">SEO local</option>
-              <option value="Automatización / IA">Automatización / IA</option>
-              <option value="Mantenimiento">Mantenimiento</option>
-              <option value="Todo lo anterior">Todo lo anterior</option>
-              <option value="Otro">Otro</option>
+              <option>Web / Landing page</option><option>SEO local</option>
+              <option>Automatización / IA</option><option>Mantenimiento</option>
+              <option>Todo lo anterior</option><option>Otro</option>
             </select>
           </div>
         </div>
         <div class="form-group">
-          <label for="f-mensaje">Cuéntanos tu proyecto</label>
-          <textarea id="f-mensaje" name="mensaje" placeholder="Describe brevemente tu negocio y qué necesitas conseguir…" required></textarea>
+          <label>Cuéntanos tu proyecto</label>
+          <textarea name="mensaje" placeholder="Describe brevemente tu negocio y qué necesitas conseguir…" required></textarea>
         </div>
         <button type="submit" class="form-submit" id="formBtn">Enviar mensaje →</button>
-        <div class="form-success" id="formSuccess" style="display:none">
-          ✅ Mensaje enviado. Te contactamos en menos de 24 horas.
-        </div>
+        <div class="form-success" id="formSuccess" style="display:none">✅ Mensaje enviado. Te contactamos en menos de 24 horas.</div>
       </form>
     </div>
   </div>
@@ -453,65 +986,29 @@
 <section id="faq">
   <div class="faq-layout">
     <div class="faq-sticky">
-      <div class="section-tag">FAQ</div>
+      <div class="s-tag">FAQ</div>
       <h2>Preguntas<br>frecuentes</h2>
-      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-top:1.5rem;">¿Tienes dudas? Aquí respondemos las más habituales. Si no encuentras lo que buscas, escríbenos directamente.</p>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.9;margin-top:1.5rem;">¿Tienes dudas? Aquí respondemos las más habituales. Si no encuentras lo que buscas, escríbenos directamente.</p>
       <a href="#contacto" class="btn-primary" style="margin-top:2rem;display:inline-flex;">Preguntarnos →</a>
     </div>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Cuánto tarda en estar lista mi web?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Una landing page básica entre 5 y 7 días. Una web completa entre 2 y 3 semanas. Los plazos siempre los confirmamos por escrito antes de empezar.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Necesito tener textos e imágenes listos?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">No es necesario. Nosotros te ayudamos con los textos usando IA y te indicamos qué tipo de imágenes necesitamos. Si no tienes fotos, trabajamos con bancos de imágenes profesionales.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué incluye el mantenimiento mensual?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Actualizaciones de seguridad, copias de seguridad semanales, monitorización de disponibilidad, soporte técnico por email y WhatsApp, y pequeños cambios de contenido sin coste adicional.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿El chatbot entiende preguntas de mis clientes reales?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Sí. Lo entrenamos con la información de tu negocio: precios, servicios, horarios, preguntas frecuentes. Responde con lenguaje natural y puede redirigir a WhatsApp o reserva cuando lo necesite.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Cuándo empiezo a ver resultados de SEO?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">El SEO local suele mostrar resultados visibles entre 2 y 4 meses. Es una inversión a medio plazo, pero los resultados son duraderos y se acumulan con el tiempo, a diferencia de la publicidad de pago.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Trabajáis solo en Oviedo o en toda España?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Trabajamos con clientes de toda España. Nuestras reuniones son por videollamada y toda la gestión es 100% online. Eso no afecta en nada a la calidad del trabajo ni los plazos.</div>
-      </div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿Cuánto tarda en estar lista mi web?<span class="faq-icon">+</span></div><div class="faq-a">Una landing page básica entre 5 y 7 días. Una web completa entre 2 y 3 semanas. Los plazos siempre los confirmamos por escrito antes de empezar.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿Necesito tener textos e imágenes listos?<span class="faq-icon">+</span></div><div class="faq-a">No es necesario. Si no tienes fotos, trabajamos con bancos de imágenes privados y profesionales.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿Qué incluye el mantenimiento mensual?<span class="faq-icon">+</span></div><div class="faq-a">Actualizaciones de seguridad, copias de seguridad semanales, monitorización de disponibilidad, soporte técnico por email y WhatsApp, y pequeños cambios de contenido sin coste adicional.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿El chatbot entiende preguntas de mis clientes reales?<span class="faq-icon">+</span></div><div class="faq-a">Sí. Lo entrenamos con la información de tu negocio: precios, servicios, horarios, preguntas frecuentes. Responde con lenguaje natural y puede redirigir a WhatsApp o reserva cuando lo necesite.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿Cuándo empiezo a ver resultados de SEO?<span class="faq-icon">+</span></div><div class="faq-a">El SEO local suele mostrar resultados visibles entre 2 y 4 meses. Es una inversión a medio plazo, pero los resultados son duraderos y se acumulan con el tiempo.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">¿Trabajáis solo en Oviedo o en toda España?<span class="faq-icon">+</span></div><div class="faq-a">Trabajamos con clientes de toda España. Nuestras reuniones son por llamada y toda la gestión es 100% online.</div></div>
     </div>
   </div>
 </section>
 
 <!-- CTA BAND -->
 <section id="cta-band">
-  <h2>¿Listo para crecer<br>en Google desde Oviedo?</h2>
+  <h2>¿Listo para<br>dar el salto?</h2>
   <p>Primera consulta gratuita. Sin compromiso. Te decimos exactamente qué necesita tu negocio.</p>
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-    <a href="#contacto" class="btn-primary" style="font-size:1.05rem;padding:1rem 2.5rem;">Empezar proyecto →</a>
-    <a href="https://wa.me/34654101780" class="btn-ghost" style="font-size:1.05rem;padding:1rem 2.5rem;">💬 WhatsApp</a>
+  <div style="display:flex;gap:0.7rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;">
+    <a href="#contacto" class="btn-primary" style="font-size:0.78rem;padding:1rem 2.5rem;">Empezar proyecto →</a>
+    <a href="https://wa.me/34654101780" class="btn-ghost" style="font-size:0.78rem;padding:1rem 2.5rem;">💬 WhatsApp</a>
   </div>
 </section>
 
@@ -519,12 +1016,12 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <div class="logo"><span>404</span> Digitals</div>
-      <p>Agencia de marketing digital en Oviedo. Diseño web, SEO local en Asturias y automatizaciones con IA para empresas que quieren crecer en Google.</p>
+      <div class="logo"><em>404</em> Digitals</div>
+      <p>Soluciones digitales para negocios que quieren crecer online. Webs, SEO y automatizaciones con IA.</p>
     </div>
     <div>
       <div class="footer-col-title">Servicios</div>
-      <ul class="footer-links-list">
+      <ul class="footer-links">
         <li><a href="#servicios">Webs y Landing Pages</a></li>
         <li><a href="#servicios">SEO Local</a></li>
         <li><a href="#servicios">Automatizaciones IA</a></li>
@@ -533,7 +1030,7 @@
     </div>
     <div>
       <div class="footer-col-title">Empresa</div>
-      <ul class="footer-links-list">
+      <ul class="footer-links">
         <li><a href="#proceso">Proceso</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#testimonios">Clientes</a></li>
@@ -542,48 +1039,222 @@
     </div>
     <div>
       <div class="footer-col-title">Contacto</div>
-      <ul class="footer-links-list">
-        <li><a href="/cdn-cgi/l/email-protection#b48084809ad0ddd3ddc0d5d8c7f4d3d9d5ddd89ad7dbd9"><span class="__cf_email__" data-cfemail="bf8b8f8b91dbd6d8d6cbded3ccffd8d2ded6d391dcd0d2">404.digitals@gmail.com</span></a></li>
-        <li><a href="tel:+34654101780">+34 654 10 17 80</a></li>
+      <ul class="footer-links">
+        <li><a href="mailto:404digitals@gmail.com">404digitals@gmail.com</a></li>
+        <li><a href="tel:+34622203296">+34 622 20 32 96</a></li>
         <li><a href="https://wa.me/34654101780">WhatsApp</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 404 Digitals · Agencia Marketing Digital Oviedo · Todos los derechos reservados</div>
-    <div class="footer-copy">www.404digitals.es · Oviedo, Asturias</div>
+    <div class="footer-copy">© 2025 <span class="footer-accent">404 Digitals</span> · Todos los derechos reservados</div>
+    <div class="footer-copy">Hecho con ☕ en Oviedo, Asturias</div>
   </div>
 </footer>
 
 <!-- CHATBOT BUTTON -->
-<button id="chatbot-btn" onclick="toggleChat()" title="Chatea con nosotros">
-  <div class="pulse"></div>
-  🤖
+<button id="chatbot-btn" onclick="toggleChat()" title="Hablar con el asistente">
+  <div class="btn-ring"></div>
+  <div class="btn-ring"></div>
+  <div class="notif-dot" id="notifDot"></div>
+  <svg id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+  </svg>
+  <svg id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:none">
+    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+  </svg>
 </button>
 
 <!-- CHATBOT WINDOW -->
 <div id="chatbot-window">
   <div class="chat-header">
     <div class="chat-header-left">
-      <div class="chat-avatar">🤖</div>
+      <div class="chat-av-wrap">
+        <div class="chat-av">🤖</div>
+        <div class="online-dot"></div>
+      </div>
       <div>
         <div class="chat-name">404 Assistant</div>
-        <div class="chat-status">En línea ahora</div>
+        <div class="chat-status">En línea · IA activa</div>
       </div>
     </div>
-    <button class="chat-close" onclick="toggleChat()">✕</button>
+    <div style="display:flex;gap:0.3rem;">
+      <button class="chat-action-btn" onclick="clearChat()" title="Nueva conversación">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+      </button>
+      <button class="chat-action-btn" onclick="toggleChat()" title="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
   </div>
-  <div class="chat-messages" id="chatMessages">
-    <div class="chat-msg bot">¡Hola! 👋 Soy el asistente de 404 Digitals. Puedo informarte sobre nuestros servicios, precios, contacto y plazos de entrega. ¿En qué puedo ayudarte?</div>
-  </div>
+  <div class="chat-messages" id="chatMessages"><div class="date-divider">Hoy</div></div>
+  <div class="quick-replies" id="quickReplies"></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);flex-shrink:0;"></div>
   <div class="chat-input-area">
-    <input class="chat-input" id="chatInput" placeholder="Escribe tu pregunta…" onkeypress="handleChatKey(event)"/>
-    <button class="chat-send" onclick="sendChatMessage()">→</button>
+    <div class="input-wrapper">
+      <textarea class="chat-input" id="chatInput" placeholder="Escribe tu pregunta…" rows="1" maxlength="500"
+        onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+    </div>
+    <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+    </button>
   </div>
+  <div class="chat-footer">Impulsado por IA · <a href="#">404 Digitals</a></div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="main.js"></script>
+<script>
+  // CURSOR
+  const cursor = document.getElementById('cursor'), ring = document.getElementById('cursor-ring');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; cursor.style.left=mx-4+'px'; cursor.style.top=my-4+'px'; });
+  (function animRing(){ rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12; ring.style.left=rx-15+'px'; ring.style.top=ry-15+'px'; requestAnimationFrame(animRing); })();
+
+  // HEADER SCROLL
+  const hdr = document.getElementById('mainHeader');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', window.scrollY > 60));
+
+  // REVEAL
+  const revObs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('visible'),(i%4)*80); });
+  }, {threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+  // COUNTERS
+  const cntObs = new IntersectionObserver(entries => {
+    if(!entries[0].isIntersecting) return; cntObs.disconnect();
+    document.querySelectorAll('.metric-num').forEach(el => {
+      const txt=el.textContent, num=parseFloat(txt.replace(/[^0-9.]/g,'')); if(!num) return;
+      const suf=txt.replace(/[0-9.]/g,''); let s=0,step=num/60;
+      const t=setInterval(()=>{ s=Math.min(s+step,num); el.textContent=(Number.isInteger(num)?Math.floor(s):s.toFixed(1))+suf; if(s>=num)clearInterval(t); },16);
+    });
+  }, {threshold:0.5});
+  cntObs.observe(document.getElementById('metrics'));
+
+  // FAQ
+  function toggleFaq(el) {
+    const item=el.parentElement, open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open) item.classList.add('open');
+  }
+
+  // FORM
+  function formEnviado() {
+    const btn=document.getElementById('formBtn'), ok=document.getElementById('formSuccess'), form=document.getElementById('contactForm');
+    btn.disabled=true; btn.textContent='Enviando…';
+    setTimeout(()=>{ form.reset(); btn.disabled=false; btn.textContent='Enviar mensaje →'; ok.style.display='block'; setTimeout(()=>ok.style.display='none',6000); },1200);
+  }
+
+  // CHATBOT
+  let chatOpen=false, isLoading=false;
+  const INITIAL_QR=['💰 Ver precios','🌐 Quiero una web','📈 ¿Cómo funciona el SEO?','🤖 Automatización','📞 Hablar con alguien'];
+
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(()=>{ addBotMsg('¡Hola! 👋 Soy el asistente de **404 Digitals**.\n\nEstoy aquí para resolver tus dudas sobre servicios, precios y presencia digital. ¿En qué puedo ayudarte?'); showQR(INITIAL_QR); }, 600);
+  });
+
+  function toggleChat() {
+    chatOpen=!chatOpen;
+    document.getElementById('chatbot-window').classList.toggle('open',chatOpen);
+    document.getElementById('icon-chat').style.display=chatOpen?'none':'block';
+    document.getElementById('icon-close').style.display=chatOpen?'block':'none';
+    if(chatOpen){ const n=document.getElementById('notifDot'); if(n)n.remove(); setTimeout(()=>document.getElementById('chatInput').focus(),350); }
+  }
+
+  function getTime(){ return new Date().toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'}); }
+
+  function fmt(t){
+    return t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+            .replace(/\n\n/g,'</p><p style="margin-top:0.45rem">')
+            .replace(/\n/g,'<br>');
+  }
+
+  function addBotMsg(text){
+    const c=document.getElementById('chatMessages');
+    const row=document.createElement('div'); row.className='msg-row bot';
+    const wrap=document.createElement('div'); wrap.className='bot-row-wrap';
+    const av=document.createElement('div'); av.className='bot-mini-av'; av.textContent='🤖';
+    const col=document.createElement('div'); col.style.cssText='display:flex;flex-direction:column';
+    const b=document.createElement('div'); b.className='chat-bubble'; b.innerHTML='<p>'+fmt(text)+'</p>';
+    const t=document.createElement('div'); t.className='msg-time'; t.textContent=getTime();
+    col.append(b,t); wrap.append(av,col); row.appendChild(wrap); c.appendChild(row); c.scrollTop=c.scrollHeight;
+  }
+
+  function addUserMsg(text){
+    const c=document.getElementById('chatMessages'); clearQR();
+    const row=document.createElement('div'); row.className='msg-row user';
+    const b=document.createElement('div'); b.className='chat-bubble'; b.textContent=text;
+    const t=document.createElement('div'); t.className='msg-time'; t.innerHTML=getTime()+' <span class="tick-icon">✓✓</span>';
+    row.append(b,t); c.appendChild(row); c.scrollTop=c.scrollHeight;
+  }
+
+  function showTyping(){
+    const c=document.getElementById('chatMessages');
+    const row=document.createElement('div'); row.className='typing-row'; row.id='typingIndicator';
+    const av=document.createElement('div'); av.className='bot-mini-av'; av.textContent='🤖';
+    const b=document.createElement('div'); b.className='typing-bubble';
+    b.innerHTML='<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
+    row.append(av,b); c.appendChild(row); c.scrollTop=c.scrollHeight;
+  }
+  function hideTyping(){ const t=document.getElementById('typingIndicator'); if(t)t.remove(); }
+
+  function showQR(list){
+    const c=document.getElementById('quickReplies'); c.innerHTML='';
+    list.forEach(txt=>{ const b=document.createElement('button'); b.className='qr-btn'; b.textContent=txt; b.onclick=()=>sendMessage(txt); c.appendChild(b); });
+  }
+  function clearQR(){ document.getElementById('quickReplies').innerHTML=''; }
+  function handleKey(e){ if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} }
+  function autoResize(el){ el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,96)+'px'; }
+
+  async function sendMessage(override){
+    if(isLoading)return;
+    const inp=document.getElementById('chatInput'), txt=(override||inp.value).trim();
+    if(!txt)return; inp.value=''; inp.style.height='auto';
+    addUserMsg(txt); isLoading=true; document.getElementById('sendBtn').disabled=true;
+    await new Promise(r=>setTimeout(r,400)); showTyping();
+    await new Promise(r=>setTimeout(r,700)); hideTyping();
+    addBotMsg(getBotReply(txt)); showQR(getFollowUps(txt.toLowerCase()));
+    isLoading=false; document.getElementById('sendBtn').disabled=false;
+    document.getElementById('chatInput').focus();
+  }
+
+  function getBotReply(msg){
+    const m=msg.toLowerCase();
+    if(m.includes('precio')||m.includes('cuesta')||m.includes('cuánto')||m.includes('cuanto')||m.includes('€')||m.includes('tarifa'))
+      return 'Nuestros planes:\n\n• **Landing page**: desde **490€ + 39€/mes**\n• **Web completa**: desde **690€ + 69€/mes**\n• **SEO local**: desde **69€/mes**\n• **Mantenimiento**: desde **39€/mes**\n\nEl más solicitado es el plan Profesional. ¿Te interesa alguno?';
+    if(m.includes('web')||m.includes('página')||m.includes('landing')||m.includes('diseño'))
+      return 'Hacemos webs a medida:\n\n✓ Diseño personalizado\n✓ Responsive (móvil/tablet)\n✓ SEO básico incluido\n✓ Formulario + WhatsApp integrado\n\nDesde **490€**. ¿Para qué tipo de negocio es?';
+    if(m.includes('seo')||m.includes('google')||m.includes('posicion'))
+      return 'SEO Local:\n\n✓ Posicionamiento en Google Maps\n✓ Palabras clave de tu zona\n✓ Google Business optimizado\n✓ Informe mensual de resultados\n\nDesde **69€/mes**. Resultados visibles en 2-4 meses. ¿Te interesa?';
+    if(m.includes('chatbot')||m.includes('automatiz')||m.includes('bot')||m.includes('ia'))
+      return 'Automatizaciones con IA:\n\n✓ Chatbots que responden 24/7\n✓ Presupuestos automáticos\n✓ Captación de leads\n✓ Integración con WhatsApp\n\nPrecio a medida según el proyecto. ¿Qué proceso quieres automatizar?';
+    if(m.includes('contact')||m.includes('hablar')||m.includes('llamar')||m.includes('reunión'))
+      return 'Puedes contactarnos por:\n\n✉️ **404digitals@gmail.com**\n💬 **WhatsApp**: +34 654 10 17 80\n📞 **Teléfono**: +34 622 20 32 96\n\nRespondemos en menos de 24h. ¿Prefieres que te llamemos nosotros?';
+    if(m.includes('tarda')||m.includes('plazo')||m.includes('tiempo')||m.includes('semana'))
+      return 'Nuestros plazos:\n\n⚡ Landing page: **5-7 días**\n🚀 Web completa: **2-3 semanas**\n📈 SEO (primeros resultados): **2-4 meses**\n\n¿Tienes una fecha límite en mente?';
+    if(m.includes('portfolio')||m.includes('proyecto')||m.includes('ejemplo'))
+      return 'Algunos proyectos recientes:\n\n🦷 Clínica Dental → **+340% consultas online**\n🔧 Taller Mecánico → chatbot de presupuestos automáticos\n🍽️ Restaurante → **Top 3 Google** en 4 meses\n\n¿De qué sector es tu negocio?';
+    if(m.includes('hola')||m.includes('buenos')||m.includes('buenas')||m.includes('hey'))
+      return '¡Hola! 👋 ¿En qué puedo ayudarte hoy?';
+    if(m.includes('gracias')) return '¡De nada! 😊 ¿Hay algo más en lo que pueda ayudarte?';
+    return 'Cuéntame más sobre tu negocio y lo que necesitas. Así puedo orientarte mejor. 😊';
+  }
+
+  function getFollowUps(m){
+    if(m.includes('precio')||m.includes('€')) return ['🔥 Plan Profesional','💎 Plan Premium','📅 Reunión gratuita'];
+    if(m.includes('seo')||m.includes('google')) return ['⏱️ ¿Cuándo veré resultados?','💰 ¿Cuánto cuesta?','📞 Hablar con alguien'];
+    if(m.includes('web')||m.includes('landing')) return ['⏱️ ¿Cuánto tarda?','🖼️ Ver portfolio','💰 Ver precios'];
+    if(m.includes('chatbot')||m.includes('ia')||m.includes('automatiz')) return ['💰 ¿Cuánto cuesta?','📋 Ver ejemplos','📞 Hablar con alguien'];
+    if(m.includes('contact')||m.includes('hablar')) return ['✉️ Email','💬 WhatsApp','📞 Llamar'];
+    return ['💰 Ver precios','📅 Reunión gratuita','🌐 Quiero una web'];
+  }
+
+  function clearChat(){
+    document.getElementById('chatMessages').innerHTML='<div class="date-divider">Hoy</div>'; clearQR();
+    setTimeout(()=>{ addBotMsg('Conversación reiniciada. ¿En qué puedo ayudarte? 😊'); showQR(INITIAL_QR); },200);
+  }
+</script>
 </body>
 </html>
