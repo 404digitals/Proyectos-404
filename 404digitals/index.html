@@ -1,273 +1,589 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 Digitals | Agencia de Marketing Digital en Oviedo</title>
-  <meta name="description" content="Agencia de marketing digital en Oviedo especializada en diseño web, SEO local y automatizaciones con IA. Ayudamos a empresas en Asturias a crecer en Google. Primera consulta gratuita."/>
-  <meta name="keywords" content="agencia marketing digital Oviedo, SEO Oviedo, diseño web Oviedo, posicionamiento Google Asturias, marketing digital Asturias, agencia SEO Oviedo"/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.404digitals.es/"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>404 Digitals | Agencia de Marketing Digital en Oviedo · SEO · Webs · IA</title>
+<meta name="description" content="Agencia de marketing digital en Oviedo. Diseño web que convierte, SEO local en Asturias y automatizaciones con IA. Primera consulta gratuita. +34 654 10 17 80"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FAF7F2;--bg2:#F3EDE4;--bg3:#EBE3D7;
+  --surface:#FFFFFF;--surface2:#FFF9F3;
+  --text:#1A1612;--text2:#5C534A;--text3:#9B9088;
+  --accent:#E8613C;--accent2:#D44E2B;--accent3:#FF7F5C;
+  --teal:#2A9D8F;--teal2:#1D7A6F;
+  --gold:#C8A45E;--gold2:#E6C97A;
+  --serif:'DM Serif Display',Georgia,serif;
+  --sans:'Outfit',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.4,0,.2,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;overflow-x:hidden}
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://www.404digitals.es/"/>
-  <meta property="og:title" content="404 Digitals | Agencia de Marketing Digital en Oviedo"/>
-  <meta property="og:description" content="Webs que convierten, SEO que posiciona y automatizaciones con IA. Agencia de marketing digital en Oviedo y toda Asturias."/>
-  <meta property="og:locale" content="es_ES"/>
+/* ══════ GRAIN OVERLAY ══════ */
+body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.028;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:180px}
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="404 Digitals | Agencia de Marketing Digital en Oviedo"/>
-  <meta name="twitter:description" content="Webs que convierten, SEO que posiciona y automatizaciones con IA. Agencia de marketing digital en Oviedo y toda Asturias."/>
+/* ══════ SELECTION ══════ */
+::selection{background:var(--accent);color:#fff}
 
-  <!-- Schema.org LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "404 Digitals",
-    "description": "Agencia de marketing digital en Oviedo especializada en diseño web, SEO local y automatizaciones con inteligencia artificial.",
-    "url": "https://www.404digitals.es",
-    "telephone": "+34654101780",
-    "email": "404.digitals@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Oviedo",
-      "addressRegion": "Asturias",
-      "addressCountry": "ES"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Oviedo"},
-      {"@type": "City", "name": "Gijón"},
-      {"@type": "AdministrativeArea", "name": "Asturias"},
-      {"@type": "Country", "name": "España"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Marketing Digital",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diseño Web en Oviedo"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Local en Oviedo"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatizaciones con IA"}}
-      ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "10"
-    },
-    "sameAs": [
-      "https://wa.me/34654101780"
-    ]
-  }
-  </script>
+/* ══════ SCROLLBAR ══════ */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px}
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050508'/%3E%3Ctext x='32' y='36' dominant-baseline='middle' text-anchor='middle' font-family='Syne%2C Arial Black%2C sans-serif' font-weight='800' font-size='21' fill='%2363b3ed' letter-spacing='-1'%3E404%3C/text%3E%3C/svg%3E"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <!-- FAQ Schema para Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"\u00bfCu\u00e1nto tarda en estar lista mi web?","acceptedAnswer":{"@type":"Answer","text":"Una landing page b\u00e1sica entre 5 y 7 d\u00edas. Una web completa entre 2 y 3 semanas."}},
-      {"@type":"Question","name":"\u00bfCu\u00e1ndo empiezo a ver resultados de SEO en Oviedo?","acceptedAnswer":{"@type":"Answer","text":"El SEO local en Oviedo suele mostrar resultados visibles entre 2 y 4 meses."}},
-      {"@type":"Question","name":"\u00bfTrab\u00e1is solo en Oviedo o en toda Espa\u00f1a?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con clientes de toda Espa\u00f1a, con especial presencia en Oviedo, Gij\u00f3n y Asturias."}},
-      {"@type":"Question","name":"\u00bfQu\u00e9 incluye el mantenimiento mensual de la web?","acceptedAnswer":{"@type":"Answer","text":"Actualizaciones de seguridad, copias de seguridad semanales, monitorizaci\u00f3n, soporte t\u00e9cnico y peque\u00f1os cambios de contenido."}}
-    ]
-  }
-  </script>
+/* ══════ ANIMATED CURSOR DOT ══════ */
+.cursor-dot{width:10px;height:10px;background:var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:transform .15s var(--ease),opacity .15s;mix-blend-mode:multiply}
+.cursor-ring{width:42px;height:42px;border:1.5px solid var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s var(--ease),height .25s var(--ease),border-color .25s;opacity:.5}
+.cursor-ring.hover{width:64px;height:64px;border-color:var(--teal);opacity:.7}
+.cursor-dot.hover{background:var(--teal);transform:translate(-50%,-50%) scale(.6)}
+
+@media(pointer:coarse){.cursor-dot,.cursor-ring{display:none}}
+
+/* ══════ REVEAL ANIMATIONS ══════ */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-50px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(50px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.reveal-scale{opacity:0;transform:scale(.92);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal-scale.visible{opacity:1;transform:scale(1)}
+.stagger-1{transition-delay:.1s}
+.stagger-2{transition-delay:.2s}
+.stagger-3{transition-delay:.3s}
+.stagger-4{transition-delay:.4s}
+.stagger-5{transition-delay:.5s}
+
+/* ══════ NAV ══════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 clamp(1.5rem,5vw,4rem);height:72px;display:flex;align-items:center;justify-content:space-between;transition:all .4s var(--ease)}
+.nav::before{content:'';position:absolute;inset:0;background:rgba(250,247,242,.85);backdrop-filter:blur(24px) saturate(1.6);border-bottom:1px solid rgba(26,22,18,.06);opacity:0;transition:opacity .4s var(--ease);z-index:-1}
+.nav.scrolled::before{opacity:1}
+.nav-logo{font-family:var(--serif);font-size:1.35rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.4rem;letter-spacing:-.02em}
+.nav-logo .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:var(--accent);color:#fff;font-family:var(--mono);font-size:.72rem;font-weight:500;border-radius:10px;transition:transform .3s var(--ease-spring)}
+.nav-logo:hover .num{transform:rotate(-8deg) scale(1.08)}
+
+.nav-links{display:flex;align-items:center;gap:.3rem}
+.nav-link{font-size:.82rem;font-weight:500;color:var(--text2);text-decoration:none;padding:.5rem 1rem;border-radius:100px;transition:all .25s var(--ease);letter-spacing:.01em;position:relative}
+.nav-link:hover{color:var(--text);background:rgba(232,97,60,.06)}
+.nav-link::after{content:'';position:absolute;bottom:6px;left:50%;width:0;height:2px;background:var(--accent);border-radius:1px;transform:translateX(-50%);transition:width .3s var(--ease)}
+.nav-link:hover::after{width:20px}
+
+.nav-cta{font-size:.8rem;font-weight:600;color:#fff;background:var(--accent);text-decoration:none;padding:.6rem 1.5rem;border-radius:100px;transition:all .3s var(--ease);letter-spacing:.01em;margin-left:.5rem;box-shadow:0 2px 12px rgba(232,97,60,.25)}
+.nav-cta:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 6px 24px rgba(232,97,60,.35)}
+
+.nav-mobile-toggle{display:none;background:none;border:none;width:40px;height:40px;cursor:pointer;position:relative}
+.nav-mobile-toggle span{display:block;width:22px;height:2px;background:var(--text);position:absolute;left:50%;transform:translateX(-50%);transition:all .3s var(--ease)}
+.nav-mobile-toggle span:nth-child(1){top:14px}
+.nav-mobile-toggle span:nth-child(2){top:20px}
+.nav-mobile-toggle span:nth-child(3){top:26px}
+
+/* ══════ HERO ══════ */
+.hero{min-height:100vh;display:flex;align-items:center;padding:clamp(6rem,12vh,10rem) clamp(1.5rem,5vw,4rem) 5rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;animation:blobFloat 12s ease-in-out infinite}
+.hero-blob-1{width:500px;height:500px;background:radial-gradient(circle,var(--accent3),transparent 70%);top:-10%;right:-5%;animation-delay:0s}
+.hero-blob-2{width:400px;height:400px;background:radial-gradient(circle,var(--gold2),transparent 70%);bottom:5%;left:-5%;animation-delay:-4s}
+.hero-blob-3{width:350px;height:350px;background:radial-gradient(circle,rgba(42,157,143,.3),transparent 70%);top:30%;left:40%;animation-delay:-8s}
+@keyframes blobFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.05)}66%{transform:translate(-20px,15px) scale(.95)}}
+
+.hero-grid{position:absolute;inset:0;z-index:0;opacity:.04;
+  background-image:linear-gradient(var(--text) 1px,transparent 1px),linear-gradient(90deg,var(--text) 1px,transparent 1px);
+  background-size:60px 60px}
+
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem 1.1rem .45rem .45rem;background:var(--surface);border:1px solid rgba(26,22,18,.08);border-radius:100px;font-size:.72rem;font-weight:600;color:var(--text2);letter-spacing:.04em;text-transform:uppercase;margin-bottom:2rem;box-shadow:0 1px 8px rgba(0,0,0,.04);animation:heroFadeUp .8s var(--ease) both}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px rgba(42,157,143,.2);animation:pulse 2.5s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(42,157,143,.2)}50%{box-shadow:0 0 0 8px rgba(42,157,143,.05)}}
+
+.hero-title{font-family:var(--serif);font-size:clamp(2.8rem,6.5vw,5.8rem);line-height:.98;letter-spacing:-.03em;color:var(--text);margin-bottom:1.6rem;animation:heroFadeUp .9s .1s var(--ease) both}
+.hero-title .highlight{color:var(--accent);font-style:italic;position:relative;display:inline-block}
+.hero-title .highlight::after{content:'';position:absolute;bottom:.08em;left:0;right:0;height:.12em;background:var(--accent);opacity:.15;border-radius:2px;transform:skewX(-4deg)}
+
+.hero-sub{font-size:clamp(.95rem,1.4vw,1.12rem);color:var(--text2);max-width:520px;line-height:1.8;margin-bottom:2.5rem;animation:heroFadeUp .9s .2s var(--ease) both}
+
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:3rem;animation:heroFadeUp .9s .3s var(--ease) both}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:600;font-size:.88rem;color:#fff;background:var(--accent);text-decoration:none;padding:.9rem 2rem;border-radius:100px;transition:all .3s var(--ease);box-shadow:0 4px 20px rgba(232,97,60,.3);border:none;cursor:pointer;letter-spacing:.01em}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-3px);box-shadow:0 8px 32px rgba(232,97,60,.4)}
+.btn-primary svg{transition:transform .3s var(--ease)}.btn-primary:hover svg{transform:translateX(3px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);background:transparent;text-decoration:none;padding:.9rem 2rem;border-radius:100px;border:1.5px solid rgba(26,22,18,.12);transition:all .3s var(--ease);cursor:pointer;letter-spacing:.01em}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent);background:rgba(232,97,60,.03);transform:translateY(-2px)}
+
+.hero-proof{display:flex;align-items:center;gap:1.5rem;animation:heroFadeUp .9s .4s var(--ease) both}
+.hero-avatars{display:flex}
+.hero-avatar{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--bg);margin-left:-10px;font-family:var(--mono);font-size:.6rem;font-weight:500;display:flex;align-items:center;justify-content:center;color:#fff}
+.hero-avatar:first-child{margin-left:0}
+.hero-avatar.a1{background:var(--accent)}
+.hero-avatar.a2{background:var(--teal)}
+.hero-avatar.a3{background:var(--gold)}
+.hero-avatar.a4{background:var(--accent2)}
+.hero-proof-text{font-size:.82rem;color:var(--text2)}.hero-proof-text strong{color:var(--text);font-weight:600}
+.hero-proof-stars{color:var(--gold);font-size:.75rem;letter-spacing:.08em}
+
+@keyframes heroFadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.6rem;z-index:4;animation:heroFadeUp 1s .7s var(--ease) both}
+.hero-scroll span{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--text3)}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--accent),transparent);animation:scrollPulse 2.5s ease infinite}
+@keyframes scrollPulse{0%,100%{opacity:.3;transform:scaleY(.7)}50%{opacity:1;transform:scaleY(1)}}
+
+/* ══════ METRICS BAR ══════ */
+.metrics{background:var(--surface);border-top:1px solid rgba(26,22,18,.06);border-bottom:1px solid rgba(26,22,18,.06);display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2}
+.metric{padding:2.2rem 1.5rem;text-align:center;border-right:1px solid rgba(26,22,18,.06);transition:background .3s var(--ease);position:relative}
+.metric:last-child{border-right:none}
+.metric:hover{background:var(--surface2)}
+.metric:hover .metric-num{transform:scale(1.05)}
+.metric-num{font-family:var(--serif);font-size:2.2rem;color:var(--accent);line-height:1;margin-bottom:.3rem;transition:transform .3s var(--ease-spring)}
+.metric-label{font-size:.72rem;font-weight:500;color:var(--text3);letter-spacing:.08em;text-transform:uppercase}
+
+/* ══════ SECTION STYLES ══════ */
+.section{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,5vw,4rem)}
+.section-alt{background:var(--surface)}
+.section-warm{background:var(--bg2)}
+.section-dark{background:var(--text);color:var(--bg)}
+
+.tag{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;padding:.35rem .9rem;background:rgba(232,97,60,.06);border-radius:100px;border:1px solid rgba(232,97,60,.1)}
+.section-dark .tag{background:rgba(232,97,60,.12);border-color:rgba(232,97,60,.2)}
+
+.section-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.6rem);line-height:1;letter-spacing:-.02em;margin-bottom:.8rem}
+.section-title .em{color:var(--accent);font-style:italic}
+.section-dark .section-title{color:var(--bg)}
+
+.section-sub{color:var(--text2);font-size:1rem;line-height:1.85;max-width:520px}
+.section-dark .section-sub{color:var(--text3)}
+
+/* ══════ SERVICES ══════ */
+.services-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:4rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.service-card{background:var(--surface);border:1px solid rgba(26,22,18,.06);border-radius:16px;padding:2.2rem;position:relative;overflow:hidden;transition:all .4s var(--ease);cursor:default}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--teal));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.06);border-color:rgba(232,97,60,.12)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-num{font-family:var(--mono);font-size:.62rem;font-weight:500;color:var(--text3);letter-spacing:.1em;margin-bottom:1.5rem}
+.service-icon{font-size:2rem;margin-bottom:1rem;display:block;transition:transform .4s var(--ease-spring)}
+.service-card:hover .service-icon{transform:scale(1.15) rotate(-6deg)}
+.service-name{font-family:var(--serif);font-size:1.05rem;margin-bottom:.6rem;letter-spacing:-.01em}
+.service-desc{font-size:.86rem;color:var(--text2);line-height:1.75}
+
+/* ══════ SHOWCASE ══════ */
+.showcase-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.feature-list{display:flex;flex-direction:column;gap:.75rem;margin-top:2rem}
+.feature-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;border-radius:12px;border:1px solid rgba(26,22,18,.05);background:rgba(255,255,255,.6);transition:all .3s var(--ease)}
+.feature-item:hover{border-color:rgba(232,97,60,.15);background:var(--surface);transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.03)}
+.feature-icon{font-size:1.3rem;flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(232,97,60,.06);border-radius:10px}
+.feature-title{font-family:var(--serif);font-size:.88rem;margin-bottom:.2rem;letter-spacing:-.01em}
+.feature-desc{font-size:.8rem;color:var(--text2)}
+
+.showcase-visual{position:relative;height:420px;display:flex;align-items:center;justify-content:center}
+.showcase-visual canvas{width:100%;height:100%;border-radius:20px}
+.showcase-glow{position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(232,97,60,.08),transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;border-radius:50%}
+
+/* ══════ PROCESS ══════ */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3.5rem}
+.process-card{background:var(--surface);border:1px solid rgba(26,22,18,.06);border-radius:16px;padding:2rem 1.8rem;position:relative;transition:all .4s var(--ease)}
+.process-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.05);border-color:rgba(232,97,60,.12)}
+.process-num{font-family:var(--serif);font-size:3rem;line-height:1;color:var(--bg2);margin-bottom:1rem;transition:color .4s var(--ease)}
+.process-card:hover .process-num{color:rgba(232,97,60,.12)}
+.process-name{font-family:var(--serif);font-size:.95rem;margin-bottom:.5rem;letter-spacing:-.01em}
+.process-desc{font-size:.84rem;color:var(--text2);line-height:1.75}
+
+/* ══════ AI SECTION ══════ */
+.ai-wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.ai-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2.5rem}
+.ai-stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.3rem 1.5rem;transition:all .3s var(--ease)}
+.ai-stat:hover{background:rgba(255,255,255,.12);border-color:rgba(232,97,60,.2);transform:translateY(-3px)}
+.ai-stat-num{font-family:var(--serif);font-size:1.8rem;color:var(--accent3);line-height:1;margin-bottom:.25rem}
+.ai-stat-label{font-size:.72rem;color:var(--text3);letter-spacing:.06em;text-transform:uppercase}
+.ai-visual{position:relative;height:480px}
+.ai-visual canvas{width:100%;height:100%}
+
+/* ══════ PORTFOLIO ══════ */
+.portfolio-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:auto auto;gap:1.25rem;margin-top:3rem}
+.portfolio-card{background:var(--surface);border:1px solid rgba(26,22,18,.06);border-radius:16px;padding:2.2rem;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;min-height:200px;transition:all .4s var(--ease)}
+.portfolio-card:first-child{grid-row:span 2;min-height:420px}
+.portfolio-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.05);border-color:rgba(232,97,60,.12)}
+.portfolio-card::before{content:attr(data-n);position:absolute;top:1.2rem;right:1.5rem;font-family:var(--serif);font-size:4rem;color:var(--bg2);line-height:1;transition:color .4s var(--ease)}
+.portfolio-card:hover::before{color:rgba(232,97,60,.08)}
+.portfolio-tag{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:.4rem}
+.portfolio-name{font-family:var(--serif);font-size:1rem;margin-bottom:.4rem;letter-spacing:-.01em}
+.portfolio-desc{font-size:.82rem;color:var(--text2);line-height:1.65}
+.portfolio-link{display:inline-flex;align-items:center;gap:.3rem;margin-top:1rem;font-size:.78rem;font-weight:600;color:var(--accent);text-decoration:none;opacity:0;transform:translateX(-8px);transition:all .3s var(--ease)}
+.portfolio-card:hover .portfolio-link{opacity:1;transform:translateX(0)}
+
+/* ══════ PRICING ══════ */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.price-card{background:var(--surface);border:1px solid rgba(26,22,18,.06);border-radius:16px;padding:2.5rem;position:relative;transition:all .4s var(--ease)}
+.price-card.featured{background:var(--text);color:var(--bg);border-color:transparent;transform:scale(1.03);z-index:2;box-shadow:0 20px 60px rgba(26,22,18,.15)}
+.price-card:not(.featured):hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,0,0,.06)}
+.price-card.featured:hover{transform:scale(1.03) translateY(-4px)}
+.price-badge{display:inline-block;font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--accent);padding:.3rem .9rem;border-radius:100px;margin-bottom:1.2rem}
+.price-headline{font-family:var(--serif);font-size:1.15rem;color:var(--text2);margin-bottom:2rem;font-style:italic;letter-spacing:-.01em}
+.price-name{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem}
+.price-features{list-style:none;margin-bottom:2rem}
+.price-features li{font-size:.84rem;color:var(--text2);padding:.55rem 0;border-bottom:1px solid rgba(26,22,18,.04);display:flex;align-items:center;gap:.6rem}
+.price-card.featured .price-features li{color:var(--text3);border-color:rgba(255,255,255,.06)}
+.price-features li::before{content:'✓';font-size:.7rem;color:var(--teal);font-weight:700;flex-shrink:0;width:18px;height:18px;display:flex;align-items:center;justify-content:center;background:rgba(42,157,143,.08);border-radius:50%}
+.price-card.featured .price-features li::before{background:rgba(42,157,143,.15)}
+.price-features li.no{color:var(--text3);opacity:.4}.price-features li.no::before{content:'×';color:var(--text3);background:rgba(155,144,136,.08)}
+.price-btn{display:block;width:100%;text-align:center;padding:.85rem;font-family:var(--sans);font-weight:600;font-size:.82rem;border-radius:100px;cursor:pointer;transition:all .3s var(--ease);text-decoration:none;letter-spacing:.02em}
+.price-btn-outline{background:transparent;border:1.5px solid rgba(26,22,18,.12);color:var(--text)}
+.price-btn-outline:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.price-btn-solid{background:var(--accent);border:none;color:#fff;box-shadow:0 4px 16px rgba(232,97,60,.3)}
+.price-btn-solid:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,97,60,.4)}
+
+/* ══════ TESTIMONIALS ══════ */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.testimonial-card{background:var(--surface);border:1px solid rgba(26,22,18,.06);border-radius:16px;padding:2.2rem;position:relative;overflow:hidden;transition:all .4s var(--ease)}
+.testimonial-card::before{content:'"';position:absolute;top:.3rem;right:1.2rem;font-family:var(--serif);font-size:5rem;color:var(--bg2);line-height:1;transition:color .4s var(--ease)}
+.testimonial-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.05);border-color:rgba(232,97,60,.12)}
+.testimonial-card:hover::before{color:rgba(232,97,60,.06)}
+.testimonial-stars{color:var(--gold);font-size:.78rem;letter-spacing:.15em;margin-bottom:1rem}
+.testimonial-text{font-size:.88rem;color:var(--text2);line-height:1.8;font-style:italic;margin-bottom:1.6rem}
+.testimonial-author{display:flex;align-items:center;gap:.8rem}
+.testimonial-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.7rem;font-weight:500;color:#fff;flex-shrink:0}
+.testimonial-avatar.c1{background:var(--accent)}
+.testimonial-avatar.c2{background:var(--teal)}
+.testimonial-avatar.c3{background:var(--gold)}
+.testimonial-name{font-family:var(--serif);font-size:.86rem}
+.testimonial-role{font-size:.7rem;color:var(--text3);margin-top:.1rem}
+
+/* ══════ CONTACT ══════ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;margin-top:.5rem}
+.contact-subtitle{font-family:var(--serif);font-size:1.3rem;margin-bottom:.7rem;letter-spacing:-.01em}
+.contact-text{color:var(--text2);font-size:.9rem;line-height:1.85;margin-bottom:2.5rem}
+.contact-links{display:flex;flex-direction:column;gap:.7rem}
+.contact-link{display:flex;align-items:center;gap:.9rem;padding:1rem 1.2rem;border:1px solid rgba(26,22,18,.06);border-radius:12px;text-decoration:none;color:var(--text);transition:all .3s var(--ease);background:var(--surface)}
+.contact-link:hover{border-color:rgba(232,97,60,.2);background:rgba(232,97,60,.02);transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.03)}
+.contact-link-icon{font-size:1.2rem;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(232,97,60,.06);border-radius:10px;flex-shrink:0}
+.contact-link-label{font-family:var(--mono);font-size:.6rem;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.contact-link-value{font-weight:500;font-size:.9rem}
+
+.form{display:flex;flex-direction:column;gap:.8rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.form-group{display:flex;flex-direction:column;gap:.35rem}
+.form-group label{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+.form-group input,.form-group textarea,.form-group select{background:var(--surface);border:1.5px solid rgba(26,22,18,.08);color:var(--text);font-family:var(--sans);font-size:.88rem;padding:.8rem 1rem;border-radius:10px;outline:none;transition:all .25s var(--ease);resize:none;appearance:none;width:100%}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(232,97,60,.06)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--text3);opacity:.5}
+.form-group textarea{min-height:110px}
+.form-group select option{background:var(--surface)}
+.form-submit{background:var(--accent);color:#fff;border:none;font-family:var(--sans);font-weight:600;font-size:.88rem;padding:.95rem 2rem;border-radius:100px;cursor:pointer;transition:all .3s var(--ease);display:flex;align-items:center;justify-content:center;gap:.5rem;letter-spacing:.02em;width:100%;box-shadow:0 4px 16px rgba(232,97,60,.25)}
+.form-submit:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,97,60,.35)}
+.form-success{display:none;background:rgba(42,157,143,.06);border:1px solid rgba(42,157,143,.15);color:var(--teal);padding:1rem;border-radius:10px;font-size:.86rem;text-align:center;margin-top:.3rem}
+
+/* ══════ FAQ ══════ */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:5rem}
+.faq-sticky{position:sticky;top:88px}
+.faq-sticky p{color:var(--text2);font-size:.9rem;line-height:1.85;margin-top:1rem}
+.faq-list{margin-top:1rem}
+.faq-item{border-bottom:1px solid rgba(26,22,18,.06)}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;cursor:pointer;font-family:var(--serif);font-size:.9rem;color:var(--text);transition:color .2s var(--ease);gap:1rem}
+.faq-question:hover{color:var(--accent)}
+.faq-toggle{width:28px;height:28px;border:1.5px solid rgba(26,22,18,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;color:var(--accent);transition:all .3s var(--ease)}
+.faq-item.open .faq-toggle{background:var(--accent);color:#fff;border-color:var(--accent);transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s var(--ease),padding .3s;font-size:.86rem;color:var(--text2);line-height:1.8}
+.faq-item.open .faq-answer{max-height:200px;padding-bottom:1.2rem}
+
+/* ══════ CTA SECTION ══════ */
+.cta-section{background:var(--text);color:var(--bg);padding:clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,4rem);text-align:center;position:relative;overflow:hidden}
+.cta-section .section-title{color:var(--bg)}
+.cta-blobs{position:absolute;inset:0;z-index:0}
+.cta-blob{position:absolute;border-radius:50%;filter:blur(100px)}
+.cta-blob-1{width:400px;height:400px;background:rgba(232,97,60,.15);top:-20%;right:-10%}
+.cta-blob-2{width:300px;height:300px;background:rgba(42,157,143,.1);bottom:-15%;left:-5%}
+.cta-content{position:relative;z-index:2}
+.cta-section p{color:var(--text3);font-size:1rem;max-width:440px;margin:0 auto 2.5rem;line-height:1.85}
+.cta-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+.cta-btns .btn-primary{box-shadow:0 4px 24px rgba(232,97,60,.35)}
+.cta-btns .btn-secondary{border-color:rgba(255,255,255,.15);color:var(--bg)}
+.cta-btns .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ══════ CHATBOT ══════ */
+.chatbot-btn{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:var(--accent);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;z-index:400;box-shadow:0 4px 24px rgba(232,97,60,.35);transition:all .3s var(--ease)}
+.chatbot-btn:hover{transform:scale(1.08);box-shadow:0 6px 32px rgba(232,97,60,.5)}
+.chatbot-btn .btn-pulse{position:absolute;inset:-5px;border-radius:50%;border:1.5px solid rgba(232,97,60,.25);animation:chatPulse 2.5s ease infinite}
+@keyframes chatPulse{0%{transform:scale(1);opacity:1}100%{transform:scale(1.7);opacity:0}}
+
+.chatbot-panel{position:fixed;bottom:5rem;right:1.5rem;width:370px;max-height:510px;background:var(--surface);border:1px solid rgba(26,22,18,.08);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.12);z-index:400;display:flex;flex-direction:column;transform:scale(.92) translateY(16px);opacity:0;pointer-events:none;transition:all .35s var(--ease-spring);overflow:hidden}
+.chatbot-panel.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
+.chat-header{padding:1rem 1.3rem;border-bottom:1px solid rgba(26,22,18,.06);display:flex;align-items:center;justify-content:space-between;background:var(--surface2)}
+.chat-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.chat-name{font-family:var(--serif);font-size:.88rem}
+.chat-status{font-size:.66rem;color:var(--teal);display:flex;align-items:center;gap:.3rem}
+.chat-status::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);box-shadow:0 0 5px rgba(42,157,143,.5)}
+.chat-close{background:none;border:none;color:var(--text3);cursor:pointer;font-size:.95rem;width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .2s var(--ease)}
+.chat-close:hover{background:rgba(26,22,18,.05);color:var(--text)}
+.chat-messages{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.6rem;scrollbar-width:thin;scrollbar-color:rgba(232,97,60,.15) transparent}
+.chat-msg{max-width:84%;padding:.7rem .9rem;font-size:.82rem;line-height:1.65;animation:msgIn .25s var(--ease)}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.chat-msg.bot{background:var(--bg2);border-radius:4px 12px 12px 12px;color:var(--text);align-self:flex-start}
+.chat-msg.user{background:var(--accent);border-radius:12px 4px 12px 12px;color:#fff;align-self:flex-end;font-weight:500}
+.chat-typing{display:flex;gap:4px;padding:.7rem .9rem;background:var(--bg2);border-radius:4px 12px 12px 12px;align-self:flex-start}
+.chat-typing span{width:5px;height:5px;border-radius:50%;background:var(--accent);animation:typeDot 1.2s ease infinite}
+.chat-typing span:nth-child(2){animation-delay:.2s}
+.chat-typing span:nth-child(3){animation-delay:.4s}
+@keyframes typeDot{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+.chat-input-area{padding:.8rem;border-top:1px solid rgba(26,22,18,.06);display:flex;gap:.5rem}
+.chat-input{flex:1;background:var(--bg);border:1.5px solid rgba(26,22,18,.06);color:var(--text);font-family:var(--sans);font-size:.82rem;padding:.6rem .9rem;border-radius:100px;outline:none;transition:border-color .2s var(--ease)}
+.chat-input:focus{border-color:var(--accent)}
+.chat-input::placeholder{color:var(--text3);opacity:.5}
+.chat-send{background:var(--accent);border:none;color:#fff;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;transition:all .2s var(--ease)}
+.chat-send:hover{background:var(--accent2);transform:scale(1.08)}
+
+/* ══════ FOOTER ══════ */
+.footer{background:var(--text);color:var(--bg);padding:4rem clamp(1.5rem,5vw,4rem) 2rem;position:relative;z-index:2}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3.5rem;margin-bottom:3rem}
+.footer-brand{font-family:var(--serif);font-size:1.2rem;color:var(--bg);margin-bottom:.8rem;display:flex;align-items:center;gap:.4rem}
+.footer-brand .num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:#fff;font-family:var(--mono);font-size:.65rem;font-weight:500;border-radius:8px}
+.footer-desc{color:var(--text3);font-size:.84rem;line-height:1.75;margin-top:.6rem}
+.footer-col-title{font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:1.2rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.footer-links a{font-size:.84rem;color:var(--text3);text-decoration:none;transition:color .2s var(--ease)}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.footer-copy{font-size:.72rem;color:var(--text3)}
+
+/* ══════ MARQUEE ══════ */
+.marquee{overflow:hidden;border-top:1px solid rgba(26,22,18,.06);border-bottom:1px solid rgba(26,22,18,.06);padding:1rem 0;background:var(--surface)}
+.marquee-track{display:flex;animation:marquee 30s linear infinite;width:max-content}
+.marquee-item{font-family:var(--serif);font-size:1.1rem;color:var(--text3);white-space:nowrap;padding:0 2rem;display:flex;align-items:center;gap:1.5rem}
+.marquee-item .sep{width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.4;flex-shrink:0}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ══════ RESPONSIVE ══════ */
+@media(max-width:900px){
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-mobile-toggle{display:block}
+  .services-header,.contact-grid,.faq-grid,.showcase-grid,.ai-wrap{grid-template-columns:1fr;gap:2.5rem}
+  .services-grid,.pricing-grid,.testimonials-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}
+  .portfolio-card:first-child{grid-row:auto;min-height:200px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .metrics{grid-template-columns:1fr 1fr}
+  .metric:nth-child(2){border-right:none}
+  .form-row{grid-template-columns:1fr}
+  .price-card.featured{transform:none}
+  .showcase-visual,.ai-visual{height:280px;margin-top:1.5rem}
+}
+</style>
 </head>
 <body>
 
-<!-- CURSOR -->
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
+<!-- Cursor -->
+<div class="cursor-dot" id="curDot"></div>
+<div class="cursor-ring" id="curRing"></div>
 
-<!-- HEADER -->
-<header>
-  <a href="#" class="logo"><span>404</span> Digitals</a>
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#precios">Precios</a>
-    <a href="#testimonios">Clientes</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<!-- ══════ NAV ══════ -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo"><span class="num">404</span> Digitals</a>
+  <div class="nav-links">
+    <a href="#servicios" class="nav-link">Servicios</a>
+    <a href="#proceso" class="nav-link">Proceso</a>
+    <a href="#precios" class="nav-link">Planes</a>
+    <a href="#testimonios" class="nav-link">Clientes</a>
+    <a href="#contacto" class="nav-link">Contacto</a>
+  </div>
   <a href="#contacto" class="nav-cta">Empezar proyecto →</a>
-</header>
+  <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+</nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-eyebrow">Agencia Marketing Digital · Oviedo, Asturias</div>
-  <h1>
-    Agencia de marketing digital en <span class="line2">Oviedo</span>
-  </h1>
-  <p class="hero-sub">Webs que convierten, SEO que posiciona en Google y automatizaciones con IA. Ayudamos a negocios en Oviedo, Gijón y toda Asturias a crecer online.</p>
-  <div class="hero-btns">
-    <a href="#contacto" class="btn-primary">Empezar ahora →</a>
-    <a href="#servicios" class="btn-ghost">Ver servicios</a>
+<!-- ══════ HERO ══════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid"></div>
   </div>
-  <p style="max-width:680px;margin:3rem auto 0;font-size:0.9rem;color:var(--muted);line-height:1.8;text-align:center;">Somos una <strong style="color:var(--white)">agencia de marketing digital en Oviedo</strong> especializada en diseño web, posicionamiento SEO y automatización con inteligencia artificial. Ayudamos a empresas en Oviedo, Gijón y toda Asturias a aumentar su visibilidad en Google y captar más clientes.</p>
-  <div class="scroll-hint">
-    <span></span>
-    <div class="scroll-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span>Agencia Marketing Digital · Oviedo, Asturias</div>
+    <h1 class="hero-title">
+      Agencia de marketing<br/>digital en <span class="highlight">Oviedo</span>
+    </h1>
+    <p class="hero-sub">Webs que convierten, SEO que posiciona en Google y automatizaciones con IA. Ayudamos a negocios en Oviedo, Gijón y toda Asturias a crecer online.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Empezar ahora <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+    <div class="hero-proof">
+      <div class="hero-avatars">
+        <div class="hero-avatar a1">DM</div>
+        <div class="hero-avatar a2">LR</div>
+        <div class="hero-avatar a3">MS</div>
+        <div class="hero-avatar a4">+7</div>
+      </div>
+      <div>
+        <div class="hero-proof-stars">★★★★★</div>
+        <div class="hero-proof-text"><strong>10+ proyectos</strong> · 100% clientes satisfechos</div>
+      </div>
+    </div>
   </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="hero-scroll-line"></div></div>
 </section>
 
-<!-- METRICS -->
-<div id="metrics">
-  <div class="metric reveal">
-    <div class="metric-num">+10</div>
-    <div class="metric-label">Proyectos entregados</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">5★</div>
-    <div class="metric-label">Valoración media</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">24h</div>
-    <div class="metric-label">Tiempo de respuesta</div>
-  </div>
-  <div class="metric reveal">
-    <div class="metric-num">100%</div>
-    <div class="metric-label">Clientes satisfechos</div>
+<!-- ══════ MARQUEE ══════ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <div class="marquee-item">Diseño Web<span class="sep"></span></div>
+    <div class="marquee-item">SEO Local Oviedo<span class="sep"></span></div>
+    <div class="marquee-item">Chatbots IA<span class="sep"></span></div>
+    <div class="marquee-item">Automatización<span class="sep"></span></div>
+    <div class="marquee-item">Google Ads<span class="sep"></span></div>
+    <div class="marquee-item">Mantenimiento Web<span class="sep"></span></div>
+    <div class="marquee-item">Analítica<span class="sep"></span></div>
+    <div class="marquee-item">E-commerce<span class="sep"></span></div>
+    <div class="marquee-item">Diseño Web<span class="sep"></span></div>
+    <div class="marquee-item">SEO Local Oviedo<span class="sep"></span></div>
+    <div class="marquee-item">Chatbots IA<span class="sep"></span></div>
+    <div class="marquee-item">Automatización<span class="sep"></span></div>
+    <div class="marquee-item">Google Ads<span class="sep"></span></div>
+    <div class="marquee-item">Mantenimiento Web<span class="sep"></span></div>
+    <div class="marquee-item">Analítica<span class="sep"></span></div>
+    <div class="marquee-item">E-commerce<span class="sep"></span></div>
   </div>
 </div>
 
-<!-- SERVICIOS -->
-<section id="servicios">
-  <div class="services-intro">
+<!-- ══════ METRICS ══════ -->
+<div class="metrics">
+  <div class="metric reveal"><div class="metric-num">+10</div><div class="metric-label">Proyectos entregados</div></div>
+  <div class="metric reveal stagger-1"><div class="metric-num">5★</div><div class="metric-label">Valoración media</div></div>
+  <div class="metric reveal stagger-2"><div class="metric-num">24h</div><div class="metric-label">Tiempo de respuesta</div></div>
+  <div class="metric reveal stagger-3"><div class="metric-num">100%</div><div class="metric-label">Clientes satisfechos</div></div>
+</div>
+
+<!-- ══════ SERVICIOS ══════ -->
+<section id="servicios" class="section">
+  <div class="services-header">
     <div>
-      <div class="section-tag">Servicios</div>
-      <h2>Lo que hacemos<br>mejor</h2>
+      <div class="tag">Servicios</div>
+      <h2 class="section-title">Lo que hacemos<br/><span class="em">mejor</span></h2>
     </div>
-    <p>Somos la agencia de marketing digital en Oviedo especializada en los tres pilares del crecimiento online: diseño web que convierte, SEO en Asturias que posiciona en Google y automatizaciones con IA que trabajan por ti 24 horas al día.</p>
+    <p class="section-sub">Somos la agencia de marketing digital en Oviedo especializada en los tres pilares del crecimiento online: diseño web que convierte, SEO en Asturias que posiciona en Google y automatizaciones con IA.</p>
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
-      <div class="service-num">01</div>
-      <span class="service-icon">🌐</span>
-      <div class="service-title">Webs y Landing Pages</div>
+      <div class="service-num">01</div><span class="service-icon">🌐</span>
+      <div class="service-name">Webs y Landing Pages</div>
       <p class="service-desc">Diseño y desarrollo a medida. Cada web está pensada para convertir visitantes en clientes desde el primer segundo.</p>
-      <span class="service-tag">Desde 490€</span>
     </div>
-    <div class="service-card reveal">
-      <div class="service-num">02</div>
-      <span class="service-icon">📈</span>
-      <div class="service-title">SEO Local en Oviedo y Posicionamiento Google</div>
-      <p class="service-desc">Aparece en Google cuando tus clientes buscan servicios en Oviedo y Asturias. Estrategia de SEO local orientada a resultados medibles y posicionamiento duradero.</p>
-      <span class="service-tag">A medida</span>
+    <div class="service-card reveal stagger-1">
+      <div class="service-num">02</div><span class="service-icon">📈</span>
+      <div class="service-name">SEO Local en Oviedo</div>
+      <p class="service-desc">Aparece en Google cuando tus clientes buscan servicios en Oviedo y Asturias. Estrategia orientada a resultados medibles.</p>
     </div>
-    <div class="service-card reveal">
-      <div class="service-num">03</div>
-      <span class="service-icon">🤖</span>
-      <div class="service-title">Automatizaciones e IA</div>
-      <p class="service-desc">Chatbots inteligentes, recepcionistas de IA que atienden llamadas y consultas 24/7, flujos automáticos y herramientas de IA que ahorran horas de trabajo manual cada semana. Tu negocio nunca cierra.</p>
-      <span class="service-tag">A medida</span>
+    <div class="service-card reveal stagger-2">
+      <div class="service-num">03</div><span class="service-icon">🤖</span>
+      <div class="service-name">Automatizaciones e IA</div>
+      <p class="service-desc">Chatbots inteligentes, recepcionistas de IA que atienden 24/7, flujos automáticos que ahorran horas de trabajo manual.</p>
     </div>
-    <div class="service-card reveal">
-      <div class="service-num">04</div>
-      <span class="service-icon">🔧</span>
-      <div class="service-title">Mantenimiento Web</div>
+    <div class="service-card reveal stagger-3">
+      <div class="service-num">04</div><span class="service-icon">🔧</span>
+      <div class="service-name">Mantenimiento Web</div>
       <p class="service-desc">Tu web siempre actualizada, segura y optimizada. Soporte técnico incluido y actualizaciones mensuales.</p>
-      <span class="service-tag">Incluido en planes</span>
     </div>
-    <div class="service-card reveal">
-      <div class="service-num">05</div>
-      <span class="service-icon">📊</span>
-      <div class="service-title">Analítica y Conversión</div>
+    <div class="service-card reveal stagger-4">
+      <div class="service-num">05</div><span class="service-icon">📊</span>
+      <div class="service-name">Analítica y Conversión</div>
       <p class="service-desc">Medimos todo lo que importa. Informes claros, tests A/B y optimización continua para mejorar tus resultados.</p>
-      <span class="service-tag">Incluido en planes</span>
     </div>
-    <div class="service-card reveal">
-      <div class="service-num">06</div>
-      <span class="service-icon">📱</span>
-      <div class="service-title">Redes Sociales y Contenido</div>
+    <div class="service-card reveal stagger-5">
+      <div class="service-num">06</div><span class="service-icon">📱</span>
+      <div class="service-name">Redes Sociales</div>
       <p class="service-desc">Estrategia de contenido y gestión de redes para que tu marca tenga presencia consistente y profesional.</p>
-      <span class="service-tag">Consultar</span>
     </div>
   </div>
 </section>
 
-<!-- PROCESO -->
-<section id="proceso">
-  <div class="section-tag">Cómo trabajamos</div>
-  <h2>Proceso claro,<br>resultados reales</h2>
-  <div class="process-steps">
-    <div class="step reveal">
-      <div class="step-circle">01</div>
-      <div class="step-title">Diagnóstico</div>
-      <p class="step-desc">Analizamos tu situación actual, competencia y objetivos. Primera reunión gratuita y sin compromiso.</p>
+<!-- ══════ SHOWCASE ══════ -->
+<section class="section section-warm">
+  <div class="showcase-grid">
+    <div>
+      <div class="tag">Tecnología</div>
+      <h2 class="section-title">Webs que <span class="em">impresionan</span><br/>y convierten</h2>
+      <p class="section-sub" style="margin-top:.8rem">Velocidad, diseño y código limpio. Cada proyecto sale optimizado para Core Web Vitals, SEO técnico y máxima conversión.</p>
+      <div class="feature-list">
+        <div class="feature-item reveal">
+          <div class="feature-icon">⚡</div>
+          <div><div class="feature-title">Carga &lt; 1 segundo</div><div class="feature-desc">Puntuación perfecta en PageSpeed. Google te premia y el usuario no espera.</div></div>
+        </div>
+        <div class="feature-item reveal stagger-1">
+          <div class="feature-icon">🔒</div>
+          <div><div class="feature-title">Seguridad enterprise</div><div class="feature-desc">SSL, firewalls, backups diarios y monitorización 24/7 incluidos.</div></div>
+        </div>
+        <div class="feature-item reveal stagger-2">
+          <div class="feature-icon">📱</div>
+          <div><div class="feature-title">100% Mobile-first</div><div class="feature-desc">Diseñadas para móvil primero. +70% de tus clientes te buscan desde el teléfono.</div></div>
+        </div>
+      </div>
     </div>
-    <div class="step reveal">
-      <div class="step-circle">02</div>
-      <div class="step-title">Estrategia</div>
-      <p class="step-desc">Diseñamos un plan de acción personalizado con plazos, herramientas y métricas de éxito claras.</p>
-    </div>
-    <div class="step reveal">
-      <div class="step-circle">03</div>
-      <div class="step-title">Ejecución</div>
-      <p class="step-desc">Desarrollamos e implementamos. Te mantenemos informado en cada fase con acceso a seguimiento en tiempo real.</p>
-    </div>
-    <div class="step reveal">
-      <div class="step-circle">04</div>
-      <div class="step-title">Optimización</div>
-      <p class="step-desc">Medimos resultados, ajustamos y mejoramos continuamente. El trabajo no termina con la entrega.</p>
+    <div class="showcase-visual">
+      <canvas id="showcaseCanvas"></canvas>
+      <div class="showcase-glow"></div>
     </div>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio">
-  <div class="section-tag">Marketing Digital Oviedo</div>
-  <h2>Servicios de marketing digital<br>para empresas en Asturias</h2>
+<!-- ══════ PROCESO ══════ -->
+<section id="proceso" class="section section-alt">
+  <div class="tag">Cómo trabajamos</div>
+  <h2 class="section-title">Proceso claro,<br/><span class="em">resultados reales</span></h2>
+  <div class="process-grid">
+    <div class="process-card reveal"><div class="process-num">01</div><div class="process-name">Diagnóstico</div><p class="process-desc">Analizamos tu situación actual, competencia y objetivos. Primera reunión gratuita y sin compromiso.</p></div>
+    <div class="process-card reveal stagger-1"><div class="process-num">02</div><div class="process-name">Estrategia</div><p class="process-desc">Diseñamos un plan personalizado con plazos, herramientas y métricas de éxito claras.</p></div>
+    <div class="process-card reveal stagger-2"><div class="process-num">03</div><div class="process-name">Ejecución</div><p class="process-desc">Desarrollamos e implementamos. Te mantenemos informado en cada fase con seguimiento en tiempo real.</p></div>
+    <div class="process-card reveal stagger-3"><div class="process-num">04</div><div class="process-name">Optimización</div><p class="process-desc">Medimos resultados, ajustamos y mejoramos continuamente. El trabajo no termina con la entrega.</p></div>
+  </div>
+</section>
+
+<!-- ══════ IA SECTION ══════ -->
+<section class="section section-dark">
+  <div class="ai-wrap">
+    <div>
+      <div class="tag">Inteligencia Artificial</div>
+      <h2 class="section-title" style="color:var(--bg)">Tecnología que<br/><span class="em">trabaja</span> por ti</h2>
+      <p class="section-sub" style="color:var(--text3);margin-top:.8rem">Nuestro agente de IA no duerme, no descansa y nunca pierde la paciencia. Atiende a tus clientes, gestiona consultas y automatiza procesos mientras tú te centras en tu negocio.</p>
+      <div class="ai-stats">
+        <div class="ai-stat reveal"><div class="ai-stat-num">24/7</div><div class="ai-stat-label">Disponible siempre</div></div>
+        <div class="ai-stat reveal stagger-1"><div class="ai-stat-num">&lt;2s</div><div class="ai-stat-label">Tiempo de respuesta</div></div>
+        <div class="ai-stat reveal stagger-2"><div class="ai-stat-num">∞</div><div class="ai-stat-label">Conversaciones a la vez</div></div>
+        <div class="ai-stat reveal stagger-3"><div class="ai-stat-num">0€</div><div class="ai-stat-label">Coste por respuesta</div></div>
+      </div>
+      <a href="#contacto" class="btn-primary" style="margin-top:2rem;display:inline-flex">Quiero mi IA →</a>
+    </div>
+    <div class="ai-visual">
+      <canvas id="aiCanvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ PORTFOLIO ══════ -->
+<section id="portfolio" class="section">
+  <div class="tag">Marketing Digital Oviedo</div>
+  <h2 class="section-title">Servicios para empresas<br/>en <span class="em">Asturias</span></h2>
   <div class="portfolio-grid">
-    <div class="portfolio-item reveal" data-num="01">
-      <div class="portfolio-tag">Web + SEO</div>
-      <div class="portfolio-title">Negocios Locales</div>
-      <p class="portfolio-desc">Creamos páginas web estratégicas diseñadas para atraer clientes en tu ciudad. Combinamos diseño profesional, velocidad y optimización para buscadores para que tu negocio aparezca cuando las personas buscan tus servicios en Google y convierta visitas en contactos reales.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="02">
-      <div class="portfolio-tag">Automatización IA</div>
-      <div class="portfolio-title">Empresas de Servicios</div>
-      <p class="portfolio-desc">Implementamos chatbots, recepcionistas de IA y sistemas de automatización que responden consultas, gestionan solicitudes y atienden a tus clientes 24/7 sin intervención humana, permitiendo que tu equipo se centre en lo que realmente importa.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="03">
-      <div class="portfolio-tag">SEO Local</div>
-      <div class="portfolio-title">Restaurante</div>
-      <p class="portfolio-desc">Optimizamos la presencia digital de restaurantes para aparecer en los primeros resultados de Google cuando los clientes buscan dónde comer, aumentando visibilidad y reservas.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="04">
-      <div class="portfolio-tag">E-commerce</div>
-      <div class="portfolio-title">Tiendas Online</div>
-      <p class="portfolio-desc">Desarrollamos tiendas online completas con catálogo de productos, pasarela de pago integrada y una experiencia de compra diseñada para maximizar las ventas.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
-    <div class="portfolio-item reveal" data-num="05">
-      <div class="portfolio-tag">Web + Mantenimiento</div>
-      <div class="portfolio-title">Servicios Profesionales</div>
-      <p class="portfolio-desc">Creamos páginas web profesionales para empresas que necesitan transmitir confianza y atraer nuevos clientes, incluyendo mantenimiento, seguridad y optimización continua.</p>
-      <a href="#contacto" class="portfolio-arrow">Saber más →</a>
-    </div>
+    <div class="portfolio-card reveal" data-n="01"><div class="portfolio-tag">Web + SEO</div><div class="portfolio-name">Negocios Locales</div><p class="portfolio-desc">Creamos páginas web estratégicas diseñadas para atraer clientes en tu ciudad. Combinamos diseño profesional, velocidad y optimización para que conviertas visitas en contactos reales.</p><a href="#contacto" class="portfolio-link">Saber más →</a></div>
+    <div class="portfolio-card reveal stagger-1" data-n="02"><div class="portfolio-tag">Automatización IA</div><div class="portfolio-name">Empresas de Servicios</div><p class="portfolio-desc">Chatbots, recepcionistas de IA y automatización que atienden 24/7 sin intervención humana.</p><a href="#contacto" class="portfolio-link">Saber más →</a></div>
+    <div class="portfolio-card reveal stagger-2" data-n="03"><div class="portfolio-tag">SEO Local</div><div class="portfolio-name">Restaurantes</div><p class="portfolio-desc">Optimizamos la presencia digital para aparecer primero cuando buscan dónde comer.</p><a href="#contacto" class="portfolio-link">Saber más →</a></div>
+    <div class="portfolio-card reveal stagger-3" data-n="04"><div class="portfolio-tag">E-commerce</div><div class="portfolio-name">Tiendas Online</div><p class="portfolio-desc">Tiendas online completas con catálogo, pasarela de pago y experiencia de compra optimizada.</p><a href="#contacto" class="portfolio-link">Saber más →</a></div>
+    <div class="portfolio-card reveal stagger-4" data-n="05"><div class="portfolio-tag">Web + Mantenimiento</div><div class="portfolio-name">Servicios Profesionales</div><p class="portfolio-desc">Webs profesionales que transmiten confianza con mantenimiento y optimización continua.</p><a href="#contacto" class="portfolio-link">Saber más →</a></div>
   </div>
 </section>
 
-<!-- PRECIOS -->
-<section id="precios">
-  <div class="section-tag">Precios</div>
-  <h2>Tarifas transparentes,<br>sin sorpresas</h2>
+<!-- ══════ PLANES ══════ -->
+<section id="precios" class="section section-warm">
+  <div class="tag">Planes</div>
+  <h2 class="section-title">Soluciones adaptadas<br/><span class="em">a tu negocio</span></h2>
   <div class="pricing-grid">
-    <div class="pricing-card reveal">
-      <div class="pricing-name">Básico</div>
-      <div class="pricing-price"><span>€</span>490</div>
-      <div class="pricing-period">+ 39€/mes mantenimiento</div>
-      <ul class="pricing-features">
+    <div class="price-card reveal">
+      <div class="price-name">Básico</div>
+      <div class="price-headline">Ideal para empezar</div>
+      <ul class="price-features">
         <li>Landing page profesional</li>
         <li>Diseño a medida</li>
         <li>Responsive móvil</li>
@@ -277,14 +593,13 @@
         <li class="no">Chatbot IA</li>
         <li class="no">Mantenimiento incluido</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar info</a>
+      <a href="#contacto" class="price-btn price-btn-outline" onclick="selectPlan('Básico')">Saber más</a>
     </div>
-    <div class="pricing-card featured reveal">
-      <div class="pricing-badge">Más popular</div>
-      <div class="pricing-name">Profesional</div>
-      <div class="pricing-price"><span>€</span>690</div>
-      <div class="pricing-period">+ 69€/mes mantenimiento</div>
-      <ul class="pricing-features">
+    <div class="price-card featured reveal stagger-1">
+      <div class="price-badge">Más popular</div>
+      <div class="price-name">Profesional</div>
+      <div class="price-headline" style="color:var(--bg)">Crecimiento real</div>
+      <ul class="price-features">
         <li>Web completa multi-sección</li>
         <li>Diseño premium a medida</li>
         <li>SEO local optimizado</li>
@@ -294,13 +609,12 @@
         <li>1 mes mantenimiento gratis</li>
         <li class="no">Automatizaciones IA</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-solid">Empezar ahora</a>
+      <a href="#contacto" class="price-btn price-btn-solid" onclick="selectPlan('Profesional')">Saber más</a>
     </div>
-    <div class="pricing-card reveal">
-      <div class="pricing-name">Premium</div>
-      <div class="pricing-price"><span>€</span>900</div>
-      <div class="pricing-period">+ 99€/mes todo incluido</div>
-      <ul class="pricing-features">
+    <div class="price-card reveal stagger-2">
+      <div class="price-name">Premium</div>
+      <div class="price-headline">Máximo rendimiento</div>
+      <ul class="price-features">
         <li>Web completa avanzada</li>
         <li>Chatbot IA personalizado</li>
         <li>SEO + contenido mensual</li>
@@ -310,221 +624,133 @@
         <li>Tests A/B incluidos</li>
         <li>Optimización continua</li>
       </ul>
-      <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar info</a>
+      <a href="#contacto" class="price-btn price-btn-outline" onclick="selectPlan('Premium')">Saber más</a>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIOS -->
-<section id="testimonios">
-  <div class="section-tag">Clientes</div>
-  <h2>Lo que dicen<br>de nosotros</h2>
+<!-- ══════ TESTIMONIOS ══════ -->
+<section id="testimonios" class="section">
+  <div class="tag">Clientes</div>
+  <h2 class="section-title">Lo que dicen<br/><span class="em">de nosotros</span></h2>
   <div class="testimonials-grid">
     <div class="testimonial-card reveal">
-      <div class="t-stars">★★★★★</div>
-      <p class="t-text">En tres meses triplicamos las consultas online. El chatbot que instalaron responde a los clientes a las 3 de la mañana. Increíble retorno de inversión.</p>
-      <div class="t-author">
-        <div class="t-avatar">DM</div>
-        <div>
-          <div class="t-name">Dr. David M.</div>
-          <div class="t-role">Clínica Dental en Oviedo (cliente SEO + Web)</div>
-        </div>
-      </div>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">En tres meses triplicamos las consultas online. El chatbot que instalaron responde a los clientes a las 3 de la mañana. Increíble retorno de inversión.</p>
+      <div class="testimonial-author"><div class="testimonial-avatar c1">DM</div><div><div class="testimonial-name">Dr. David M.</div><div class="testimonial-role">Clínica Dental en Oviedo</div></div></div>
     </div>
-    <div class="testimonial-card reveal">
-      <div class="t-stars">★★★★★</div>
-      <p class="t-text">Antes no aparecíamos en Google. Ahora somos los primeros cuando alguien busca nuestro sector en Asturias. El trabajo de SEO habla por sí solo.</p>
-      <div class="t-author">
-        <div class="t-avatar">LR</div>
-        <div>
-          <div class="t-name">Laura R.</div>
-          <div class="t-role">Restaurante en Gijón (cliente SEO Local)</div>
-        </div>
-      </div>
+    <div class="testimonial-card reveal stagger-1">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Antes no aparecíamos en Google. Ahora somos los primeros cuando alguien busca nuestro sector en Asturias. El trabajo de SEO habla por sí solo.</p>
+      <div class="testimonial-author"><div class="testimonial-avatar c2">LR</div><div><div class="testimonial-name">Laura R.</div><div class="testimonial-role">Restaurante en Gijón</div></div></div>
     </div>
-    <div class="testimonial-card reveal">
-      <div class="t-stars">★★★★★</div>
-      <p class="t-text">La web que me hicieron es exactamente lo que necesitaba. Profesional, rápida y mis clientes siempre me la mencionan. El soporte post-entrega es excelente.</p>
-      <div class="t-author">
-        <div class="t-avatar">MS</div>
-        <div>
-          <div class="t-name">Marcos S.</div>
-          <div class="t-role">Taller en Oviedo (cliente Diseño Web)</div>
-        </div>
-      </div>
+    <div class="testimonial-card reveal stagger-2">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">La web que me hicieron es exactamente lo que necesitaba. Profesional, rápida y mis clientes siempre me la mencionan. El soporte post-entrega es excelente.</p>
+      <div class="testimonial-author"><div class="testimonial-avatar c3">MS</div><div><div class="testimonial-name">Marcos S.</div><div class="testimonial-role">Taller en Oviedo</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contacto">
-  <div class="section-tag">Contacto</div>
-  <h2>Hablemos de<br>tu proyecto</h2>
-  <div class="contact-layout">
-    <div class="contact-info">
-      <h3>Empecemos con<br>una reunión gratuita</h3>
-      <p>Sin compromiso. En 24 horas analizamos tu situación y te decimos exactamente lo que necesitas (y lo que no).</p>
+<!-- ══════ CONTACTO ══════ -->
+<section id="contacto" class="section section-alt">
+  <div class="tag">Contacto</div>
+  <h2 class="section-title">Hablemos de<br/><span class="em">tu proyecto</span></h2>
+  <div class="contact-grid">
+    <div>
+      <h3 class="contact-subtitle">Empecemos con una reunión gratuita</h3>
+      <p class="contact-text">Sin compromiso. En 24 horas analizamos tu situación y te decimos exactamente lo que necesitas (y lo que no).</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#043034302a606d636d70656877446369656d682a676b69" class="contact-link">
-          <span class="contact-link-icon">✉️</span>
-          <div>
-            <div class="contact-link-label">Email</div>
-            <div class="contact-link-value"><span class="__cf_email__" data-cfemail="516561657f3538363825303d2211363c30383d7f323e3c">404.digitals@gmail.com</span></div>
-          </div>
-        </a>
-        <a href="https://wa.me/34985000000" class="contact-link">
-          <span class="contact-link-icon">💬</span>
-          <div>
-            <div class="contact-link-label">WhatsApp</div>
-            <div class="contact-link-value">+34 654 10 17 80</div>
-          </div>
-        </a>
-        <a href="tel:+34 654 10 17 80" class="contact-link">
-          <span class="contact-link-icon">📞</span>
-          <div>
-            <div class="contact-link-label">Teléfono</div>
-            <div class="contact-link-value">+34 654 10 17 80</div>
-          </div>
-        </a>
+        <a href="mailto:404.digitals@gmail.com" class="contact-link"><div class="contact-link-icon">✉️</div><div><div class="contact-link-label">Email</div><div class="contact-link-value">404.digitals@gmail.com</div></div></a>
+        <a href="https://wa.me/34654101780" target="_blank" class="contact-link"><div class="contact-link-icon">💬</div><div><div class="contact-link-label">WhatsApp</div><div class="contact-link-value">+34 654 10 17 80</div></div></a>
+        <a href="tel:+34654101780" class="contact-link"><div class="contact-link-icon">📞</div><div><div class="contact-link-label">Teléfono</div><div class="contact-link-value">+34 654 10 17 80</div></div></a>
       </div>
     </div>
     <div>
-      <!-- iframe oculto: recibe respuesta de Make sin CORS ni redirección -->
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-
-      <form class="contact-form" id="contactForm"
-            action="https://hook.eu1.make.com/ew9uflt7da1ivljkxrbcezslbfvsxd8y"
-            method="POST"
-            target="hidden_iframe"
-            onsubmit="formEnviado()">
-
+      <form class="form" id="contactForm" action="https://hook.eu1.make.com/ew9uflt7da1ivljkxrbcezslbfvsxd8y" method="POST" target="hidden_iframe" onsubmit="formDone()">
         <div class="form-row">
-          <div class="form-group">
-            <label for="f-nombre">Nombre</label>
-            <input id="f-nombre" name="nombre" type="text" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="f-apellidos">Apellidos</label>
-            <input id="f-apellidos" name="apellidos" type="text" placeholder="Tus apellidos" required />
-          </div>
+          <div class="form-group"><label>Nombre</label><input name="nombre" type="text" placeholder="Tu nombre" required/></div>
+          <div class="form-group"><label>Apellidos</label><input name="apellidos" type="text" placeholder="Tus apellidos" required/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" placeholder="tu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="f-telefono">Teléfono</label>
-            <input id="f-telefono" name="telefono" type="tel" placeholder="+34 600 000 000" />
-          </div>
+          <div class="form-group"><label>Email</label><input name="email" type="email" placeholder="tu@email.com" required/></div>
+          <div class="form-group"><label>Teléfono</label><input name="telefono" type="tel" placeholder="+34 600 000 000"/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="f-empresa">Empresa</label>
-            <input id="f-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" />
-          </div>
-          <div class="form-group">
-            <label for="f-servicio">Servicio</label>
-            <select id="f-servicio" name="servicio" required>
+          <div class="form-group"><label>Servicio</label>
+            <select name="servicio" required>
               <option value="">¿Qué necesitas?</option>
-              <option value="Web / Landing page">Web / Landing page</option>
-              <option value="SEO local">SEO local</option>
-              <option value="Automatización / IA">Automatización / IA</option>
-              <option value="Mantenimiento">Mantenimiento</option>
-              <option value="Todo lo anterior">Todo lo anterior</option>
-              <option value="Otro">Otro</option>
+              <option>Web / Landing page</option>
+              <option>SEO local</option>
+              <option>Automatización / IA</option>
+              <option>Mantenimiento</option>
+              <option>Todo lo anterior</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Plan de interés</label>
+            <select name="plan" id="planSelect">
+              <option value="">Selecciona un plan (opcional)</option>
+              <option value="Básico">Básico</option>
+              <option value="Profesional">Profesional</option>
+              <option value="Premium">Premium</option>
+              <option value="No estoy seguro">No estoy seguro</option>
             </select>
           </div>
         </div>
-        <div class="form-group">
-          <label for="f-mensaje">Cuéntanos tu proyecto</label>
-          <textarea id="f-mensaje" name="mensaje" placeholder="Describe brevemente tu negocio y qué necesitas conseguir…" required></textarea>
-        </div>
-        <button type="submit" class="form-submit" id="formBtn">Enviar mensaje →</button>
-        <div class="form-success" id="formSuccess" style="display:none">
-          ✅ Mensaje enviado. Te contactamos en menos de 24 horas.
-        </div>
+        <div class="form-group"><label>Cuéntanos tu proyecto</label><textarea name="mensaje" placeholder="Describe brevemente tu negocio y qué necesitas conseguir…" required></textarea></div>
+        <button type="submit" class="form-submit" id="fBtn">Enviar mensaje <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <div class="form-success" id="fOk">✅ Mensaje enviado. Te contactamos en menos de 24 horas.</div>
       </form>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="faq-layout">
+<!-- ══════ FAQ ══════ -->
+<section id="faq" class="section">
+  <div class="faq-grid">
     <div class="faq-sticky">
-      <div class="section-tag">FAQ</div>
-      <h2>Preguntas<br>frecuentes</h2>
-      <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-top:1.5rem;">¿Tienes dudas? Aquí respondemos las más habituales. Si no encuentras lo que buscas, escríbenos directamente.</p>
-      <a href="#contacto" class="btn-primary" style="margin-top:2rem;display:inline-flex;">Preguntarnos →</a>
+      <div class="tag">FAQ</div>
+      <h2 class="section-title">Preguntas<br/><span class="em">frecuentes</span></h2>
+      <p>¿Tienes dudas? Aquí respondemos las más habituales. Si no encuentras lo que buscas, escríbenos directamente.</p>
+      <a href="#contacto" class="btn-primary" style="margin-top:1.5rem;display:inline-flex">Preguntarnos →</a>
     </div>
     <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Cuánto tarda en estar lista mi web?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Una landing page básica entre 5 y 7 días. Una web completa entre 2 y 3 semanas. Los plazos siempre los confirmamos por escrito antes de empezar.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Necesito tener textos e imágenes listos?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">No es necesario. Nosotros te ayudamos con los textos usando IA y te indicamos qué tipo de imágenes necesitamos. Si no tienes fotos, trabajamos con bancos de imágenes profesionales.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Qué incluye el mantenimiento mensual?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Actualizaciones de seguridad, copias de seguridad semanales, monitorización de disponibilidad, soporte técnico por email y WhatsApp, y pequeños cambios de contenido sin coste adicional.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿El chatbot entiende preguntas de mis clientes reales?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Sí. Lo entrenamos con la información de tu negocio: precios, servicios, horarios, preguntas frecuentes. Responde con lenguaje natural y puede redirigir a WhatsApp o reserva cuando lo necesite.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Cuándo empiezo a ver resultados de SEO?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">El SEO local suele mostrar resultados visibles entre 2 y 4 meses. Es una inversión a medio plazo, pero los resultados son duraderos y se acumulan con el tiempo, a diferencia de la publicidad de pago.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          ¿Trabajáis solo en Oviedo o en toda España?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-a">Trabajamos con clientes de toda España. Nuestras reuniones son por videollamada y toda la gestión es 100% online. Eso no afecta en nada a la calidad del trabajo ni los plazos.</div>
-      </div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿Cuánto tarda en estar lista mi web?</span><div class="faq-toggle">+</div></div><div class="faq-answer">Una landing page básica entre 5 y 7 días. Una web completa entre 2 y 3 semanas. Los plazos siempre los confirmamos por escrito antes de empezar.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿Necesito tener textos e imágenes listos?</span><div class="faq-toggle">+</div></div><div class="faq-answer">No es necesario. Nosotros te ayudamos con los textos usando IA y te indicamos qué tipo de imágenes necesitamos. Si no tienes fotos, trabajamos con bancos de imágenes profesionales.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿Qué incluye el mantenimiento mensual?</span><div class="faq-toggle">+</div></div><div class="faq-answer">Actualizaciones de seguridad, copias de seguridad semanales, monitorización de disponibilidad, soporte técnico por email y WhatsApp, y pequeños cambios de contenido sin coste adicional.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿El chatbot entiende preguntas de mis clientes reales?</span><div class="faq-toggle">+</div></div><div class="faq-answer">Sí. Lo entrenamos con la información de tu negocio: precios, servicios, horarios, preguntas frecuentes. Responde con lenguaje natural y puede redirigir a WhatsApp o reserva cuando lo necesite.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿Cuándo empiezo a ver resultados de SEO?</span><div class="faq-toggle">+</div></div><div class="faq-answer">El SEO local suele mostrar resultados visibles entre 2 y 4 meses. Es una inversión a medio plazo, pero los resultados son duraderos y se acumulan con el tiempo.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>¿Trabajáis solo en Oviedo o en toda España?</span><div class="faq-toggle">+</div></div><div class="faq-answer">Trabajamos con clientes de toda España. Nuestras reuniones son por videollamada y toda la gestión es 100% online.</div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA BAND -->
-<section id="cta-band">
-  <h2>¿Listo para crecer<br>en Google desde Oviedo?</h2>
-  <p>Primera consulta gratuita. Sin compromiso. Te decimos exactamente qué necesita tu negocio.</p>
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-    <a href="#contacto" class="btn-primary" style="font-size:1.05rem;padding:1rem 2.5rem;">Empezar proyecto →</a>
-    <a href="https://wa.me/34654101780" class="btn-ghost" style="font-size:1.05rem;padding:1rem 2.5rem;">💬 WhatsApp</a>
+<!-- ══════ CTA ══════ -->
+<section class="cta-section">
+  <div class="cta-blobs"><div class="cta-blob cta-blob-1"></div><div class="cta-blob cta-blob-2"></div></div>
+  <div class="cta-content">
+    <div class="tag" style="margin:0 auto 1rem">¿Listo?</div>
+    <h2 class="section-title">¿Listo para crecer<br/>en Google desde <span class="em">Oviedo</span>?</h2>
+    <p>Primera consulta gratuita. Sin compromiso. Te decimos exactamente qué necesita tu negocio.</p>
+    <div class="cta-btns">
+      <a href="#contacto" class="btn-primary" style="font-size:.95rem;padding:1rem 2.5rem">Empezar proyecto →</a>
+      <a href="https://wa.me/34654101780" target="_blank" class="btn-secondary" style="font-size:.95rem;padding:1rem 2.5rem">💬 WhatsApp</a>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="logo"><span>404</span> Digitals</div>
-      <p>Agencia de marketing digital en Oviedo. Diseño web, SEO local en Asturias y automatizaciones con IA para empresas que quieren crecer en Google.</p>
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="num">404</span> Digitals</div>
+      <p class="footer-desc">Agencia de marketing digital en Oviedo. Diseño web, SEO local en Asturias y automatizaciones con IA para empresas que quieren crecer en Google.</p>
     </div>
     <div>
       <div class="footer-col-title">Servicios</div>
-      <ul class="footer-links-list">
+      <ul class="footer-links">
         <li><a href="#servicios">Webs y Landing Pages</a></li>
         <li><a href="#servicios">SEO Local</a></li>
         <li><a href="#servicios">Automatizaciones IA</a></li>
@@ -533,17 +759,17 @@
     </div>
     <div>
       <div class="footer-col-title">Empresa</div>
-      <ul class="footer-links-list">
+      <ul class="footer-links">
         <li><a href="#proceso">Proceso</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#testimonios">Clientes</a></li>
-        <li><a href="#precios">Precios</a></li>
+        <li><a href="#precios">Planes</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Contacto</div>
-      <ul class="footer-links-list">
-        <li><a href="/cdn-cgi/l/email-protection#b48084809ad0ddd3ddc0d5d8c7f4d3d9d5ddd89ad7dbd9"><span class="__cf_email__" data-cfemail="bf8b8f8b91dbd6d8d6cbded3ccffd8d2ded6d391dcd0d2">404.digitals@gmail.com</span></a></li>
+      <ul class="footer-links">
+        <li><a href="mailto:404.digitals@gmail.com">404.digitals@gmail.com</a></li>
         <li><a href="tel:+34654101780">+34 654 10 17 80</a></li>
         <li><a href="https://wa.me/34654101780">WhatsApp</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -556,34 +782,155 @@
   </div>
 </footer>
 
-<!-- CHATBOT BUTTON -->
-<button id="chatbot-btn" onclick="toggleChat()" title="Chatea con nosotros">
-  <div class="pulse"></div>
-  🤖
+<!-- ══════ CHATBOT ══════ -->
+<button class="chatbot-btn" onclick="cbToggle()" title="Chatea con nosotros">
+  <div class="btn-pulse"></div><span id="cbBtnIcon">🤖</span>
 </button>
-
-<!-- CHATBOT WINDOW -->
-<div id="chatbot-window">
+<div class="chatbot-panel" id="cbPanel">
   <div class="chat-header">
-    <div class="chat-header-left">
+    <div style="display:flex;align-items:center;gap:.7rem">
       <div class="chat-avatar">🤖</div>
-      <div>
-        <div class="chat-name">404 Assistant</div>
-        <div class="chat-status">En línea ahora</div>
-      </div>
+      <div><div class="chat-name">404 Assistant</div><div class="chat-status">En línea ahora</div></div>
     </div>
-    <button class="chat-close" onclick="toggleChat()">✕</button>
+    <button class="chat-close" onclick="cbToggle()">✕</button>
   </div>
-  <div class="chat-messages" id="chatMessages">
+  <div class="chat-messages" id="cbMsgs">
     <div class="chat-msg bot">¡Hola! 👋 Soy el asistente de 404 Digitals. Puedo informarte sobre nuestros servicios, precios, contacto y plazos de entrega. ¿En qué puedo ayudarte?</div>
   </div>
   <div class="chat-input-area">
-    <input class="chat-input" id="chatInput" placeholder="Escribe tu pregunta…" onkeypress="handleChatKey(event)"/>
-    <button class="chat-send" onclick="sendChatMessage()">→</button>
+    <input class="chat-input" id="cbIn" placeholder="Escribe tu pregunta…" onkeypress="if(event.key==='Enter')cbSend()"/>
+    <button class="chat-send" onclick="cbSend()">→</button>
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ═══ Custom Cursor ═══ */
+const dot=document.getElementById('curDot'),ring=document.getElementById('curRing');
+let cx=innerWidth/2,cy=innerHeight/2,rx2=cx,ry2=cy;
+document.addEventListener('mousemove',e=>{cx=e.clientX;cy=e.clientY;dot.style.left=cx+'px';dot.style.top=cy+'px'});
+(function cursorLoop(){rx2+=(cx-rx2)*.1;ry2+=(cy-ry2)*.1;ring.style.left=rx2+'px';ring.style.top=ry2+'px';requestAnimationFrame(cursorLoop)})();
+document.addEventListener('mouseover',e=>{if(e.target.closest('a,button')){dot.classList.add('hover');ring.classList.add('hover')}});
+document.addEventListener('mouseout',e=>{if(e.target.closest('a,button')){dot.classList.remove('hover');ring.classList.remove('hover')}});
+
+/* ═══ Nav scroll effect ═══ */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+
+/* ═══ Reveal on scroll ═══ */
+const revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>revealObs.observe(el));
+
+/* ═══ Showcase Three.js — Organic sphere ═══ */
+(function(){
+  const cv=document.getElementById('showcaseCanvas');if(!cv)return;
+  const parent=cv.parentElement;
+  const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+  R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(parent.offsetWidth,parent.offsetHeight);
+  const S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(55,parent.offsetWidth/parent.offsetHeight,.1,100);
+  cam.position.z=8;
+
+  /* Warm lighting */
+  S.add(new THREE.AmbientLight(0xfff5e6,.6));
+  const dl=new THREE.DirectionalLight(0xe8613c,1.2);dl.position.set(4,6,4);S.add(dl);
+  const pl=new THREE.PointLight(0x2a9d8f,.8,20);pl.position.set(-4,2,-3);S.add(pl);
+
+  /* Main sphere with displacement-look */
+  const geo=new THREE.IcosahedronGeometry(2.4,4);
+  const mat=new THREE.MeshPhongMaterial({color:0xfaf7f2,specular:0xe8613c,shininess:30,wireframe:false,flatShading:true,transparent:true,opacity:.9});
+  const mesh=new THREE.Mesh(geo,mat);S.add(mesh);
+
+  /* Wireframe overlay */
+  const wire=new THREE.Mesh(new THREE.IcosahedronGeometry(2.5,3),new THREE.MeshBasicMaterial({color:0xe8613c,wireframe:true,transparent:true,opacity:.08}));
+  S.add(wire);
+
+  /* Orbiting rings */
+  [0,1,2].forEach(i=>{
+    const t=new THREE.Mesh(new THREE.TorusGeometry(2.8+i*.6,.015,8,80),new THREE.MeshBasicMaterial({color:i===0?0xe8613c:0x2a9d8f,transparent:true,opacity:.25-i*.06}));
+    t.rotation.x=Math.PI/2.5+i*.4;t.rotation.y=i*.7;t.userData={speed:.005+i*.002};S.add(t)});
+
+  /* Floating dots */
+  const dotsG=new THREE.Group();
+  for(let i=0;i<20;i++){
+    const d=new THREE.Mesh(new THREE.SphereGeometry(.05,6,6),new THREE.MeshBasicMaterial({color:i%2?0xe8613c:0x2a9d8f,transparent:true,opacity:.6}));
+    const a=i/20*Math.PI*2;
+    d.position.set(Math.cos(a)*3.5,Math.sin(a*.5)*1.5,Math.sin(a)*3.5);dotsG.add(d)}
+  S.add(dotsG);
+
+  let f=0;
+  (function an(){requestAnimationFrame(an);f+=.01;
+    mesh.rotation.y=f*.2;mesh.rotation.x=Math.sin(f*.15)*.15;
+    wire.rotation.y=-f*.15;wire.rotation.x=f*.1;
+    S.children.forEach(o=>{if(o.userData&&o.userData.speed)o.rotation.z+=o.userData.speed});
+    dotsG.rotation.y=f*.3;dotsG.rotation.x=f*.06;
+    /* Vertex displacement */
+    const pos=geo.attributes.position;
+    for(let i=0;i<pos.count;i++){
+      const v=new THREE.Vector3().fromBufferAttribute(pos,i).normalize();
+      const d=2.4+Math.sin(v.x*3+f*1.5)*.08+Math.sin(v.y*4+f*1.2)*.06+Math.sin(v.z*2.5+f*1.8)*.05;
+      pos.setXYZ(i,v.x*d,v.y*d,v.z*d)}
+    pos.needsUpdate=true;geo.computeVertexNormals();
+    R.render(S,cam)})();
+  window.addEventListener('resize',()=>{R.setSize(parent.offsetWidth,parent.offsetHeight);cam.aspect=parent.offsetWidth/parent.offsetHeight;cam.updateProjectionMatrix()});
+})();
+
+/* ═══ AI Canvas — Neural network ═══ */
+(function(){
+  const cv=document.getElementById('aiCanvas');if(!cv)return;
+  const ctx=cv.getContext('2d');
+  let w,h;
+  function resize(){w=cv.parentElement.offsetWidth;h=cv.parentElement.offsetHeight;cv.width=w*devicePixelRatio;cv.height=h*devicePixelRatio;cv.style.width=w+'px';cv.style.height=h+'px';ctx.scale(devicePixelRatio,devicePixelRatio)}
+  resize();window.addEventListener('resize',resize);
+
+  const nodes=[];
+  for(let i=0;i<40;i++)nodes.push({x:Math.random()*400+50,y:Math.random()*400+40,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:2+Math.random()*3});
+
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    /* connections */
+    ctx.lineWidth=.5;
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.sqrt(dx*dx+dy*dy);
+        if(d<120){
+          const a=1-d/120;
+          ctx.strokeStyle=`rgba(232,97,60,${a*.25})`;
+          ctx.beginPath();ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[j].x,nodes[j].y);ctx.stroke()}}}
+    /* nodes */
+    nodes.forEach(n=>{
+      n.x+=n.vx;n.y+=n.vy;
+      if(n.x<0||n.x>w)n.vx*=-1;
+      if(n.y<0||n.y>h)n.vy*=-1;
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+      ctx.fillStyle='rgba(232,97,60,.55)';ctx.fill();
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r+4,0,Math.PI*2);
+      ctx.fillStyle='rgba(232,97,60,.08)';ctx.fill()});
+    requestAnimationFrame(draw)}
+  draw();
+})();
+
+/* ═══ FAQ ═══ */
+function toggleFaq(el){const p=el.parentElement,wasOpen=p.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));if(!wasOpen)p.classList.add('open')}
+
+/* ═══ Form ═══ */
+function formDone(){
+  const btn=document.getElementById('fBtn'),ok=document.getElementById('fOk');
+  btn.textContent='Enviando…';btn.disabled=true;
+  document.getElementById('hidden_iframe').onload=()=>{btn.style.display='none';ok.style.display='block'};
+  setTimeout(()=>{if(ok.style.display!=='block'){btn.textContent='Enviar mensaje →';btn.disabled=false}},8000)}
+
+/* ═══ Chatbot ═══ */
+const KB={precio:['precio','coste','cuánto','cuanto','tarifa','presupuesto'],seo:['seo','google','posicion','posicionamiento','buscador'],web:['web','landing','página','pagina','diseño'],ia:['chatbot','bot','automatiz','ia','inteligencia'],tiempo:['tiempo','tarda','plazo','cuando','cuándo','días'],contacto:['contacto','teléfono','telefono','whatsapp','email','llamar'],mantenimiento:['mantenimiento','seguridad','backup','soporte'],zona:['donde','dónde','oviedo','asturias','gijon','españa']};
+const RS={precio:'Tenemos tres planes: Básico, Profesional y Premium, adaptados a cada tipo de negocio. ¿Te gustaría que te asesoremos sobre cuál es el más adecuado para ti? Rellena el formulario de contacto y te respondemos en 24h.',seo:'El SEO local en Oviedo suele dar resultados visibles en 2-4 meses. ¿Quieres una auditoría gratuita?',web:'Hacemos webs a medida, landing pages y e-commerce. Entregadas en 5-14 días según complejidad. ¿Quieres que te asesoremos?',ia:'Chatbots para WhatsApp, recepcionistas de IA y automatizaciones. Tu negocio responde 24/7.',tiempo:'Landing page: 5-7 días. Web completa: 2-3 semanas.',contacto:'📞 +34 654 10 17 80 · ✉️ 404.digitals@gmail.com · 💬 wa.me/34654101780',mantenimiento:'Incluye: actualizaciones, backups semanales, monitorización, soporte técnico y cambios de contenido.',zona:'Somos de Oviedo, Asturias. Trabajamos con clientes de toda España, 100% online.',default:'Gracias por tu pregunta 😊 Escríbenos al WhatsApp: +34 654 10 17 80 o usa el formulario de contacto.'};
+function cbGet(t){const l=t.toLowerCase();for(const[k,kws]of Object.entries(KB))if(kws.some(w=>l.includes(w)))return RS[k];if(/hola|buenos|buenas|hello/.test(l))return'¡Hola! 👋 ¿En qué puedo ayudarte?';if(/gracias|thank/.test(l))return'¡De nada! 😊 ¿Algo más?';return RS.default}
+let cbIsOpen=false;
+function cbToggle(){cbIsOpen=!cbIsOpen;document.getElementById('cbPanel').classList.toggle('open',cbIsOpen);document.getElementById('cbBtnIcon').textContent=cbIsOpen?'✕':'🤖';if(cbIsOpen)document.getElementById('cbIn').focus()}
+function cbSend(){const inp=document.getElementById('cbIn'),m=inp.value.trim();if(!m)return;inp.value='';addMsg(m,'user');const typ=document.createElement('div');typ.className='chat-typing';typ.id='cbTyp';typ.innerHTML='<span></span><span></span><span></span>';document.getElementById('cbMsgs').appendChild(typ);scrollChat();setTimeout(()=>{document.getElementById('cbTyp')?.remove();addMsg(cbGet(m),'bot')},800)}
+function addMsg(t,c){const d=document.createElement('div');d.className='chat-msg '+c;d.textContent=t;document.getElementById('cbMsgs').appendChild(d);scrollChat()}
+/* ═══ Select Plan from pricing cards ═══ */
+function selectPlan(plan){const sel=document.getElementById('planSelect');if(sel){sel.value=plan}}
+
+function scrollChat(){const m=document.getElementById('cbMsgs');m.scrollTop=m.scrollHeight}
+</script>
 </body>
 </html>
